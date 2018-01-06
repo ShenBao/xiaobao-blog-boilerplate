@@ -1,0 +1,16 @@
+/**
+ * Page content
+ */
+
+.page-content {
+    padding: $spacing-unit 0;
+    flex: 1; // min-height: 100%;
+    color: #333333;
+    a {
+        color: #000000;
+    }
+}
+
+.page-heading {
+    @include relative-font-size(1.25);
+}

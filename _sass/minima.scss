@@ -18,11 +18,6 @@ $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
-// Width of the content area
-// $content-width:    800px !default;
-// $on-palm:          600px !default;
-// $on-laptop:        800px !default;
-
 $content-width:    920px !default;
 $on-palm:          750px !default;
 $on-laptop:        920px !default;
@@ -34,6 +29,7 @@ $on-laptop:        920px !default;
 //     padding-left: $spacing-unit / 2;
 //   }
 // }
+
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
     @content;
@@ -44,11 +40,17 @@ $on-laptop:        920px !default;
   font-size: $base-font-size * $ratio;
 }
 
+
 // Import partials.
 @import
   "minima/normalize",
   "minima/base",
   "minima/layout",
-  "minima/syntax-highlighting",
-  "minima/footer"
+  "minima/header",
+  "minima/contact-info",
+  "minima/footer",
+  "minima/post-list",
+  "minima/page",
+  "minima/post",
+  "minima/syntax-highlighting"
 ;

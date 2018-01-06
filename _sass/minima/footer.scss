@@ -1,40 +1,10 @@
-.contact-info {
-    background: #F9F9F9;
-    border-top: 1px solid rgba(230, 230, 230, 0.99);
-    .contact-info-content {
-        padding: 20px 10px;
-        font-size: 14px;
-    }
-    p {
-        margin-left: 30px;
-        font-size: 16px;
-    }
-    ul {
-        list-style: none;
-        li {
-            float: left;
-            width: 130px;
-            margin-top: 15px;
-            dt {
-                font-size: 16px;
-                color: #1E1E1E;
-                line-height: 22px;
-                margin-bottom: 5px;
-            }
-            dd {
-                line-height: 25px;
-                color: #6D6D6D;
-                a {
-                    color: #6E717C;
-                }
-            }
-        }
-    }
-}
+/**
+* site-footer
+*/
 
 .site-footer {
     background-color: black;
-    padding: 10px 0;
+    padding: 10px 0 30px;
     color: white;
     line-height: 25px;
     p {
@@ -51,4 +21,59 @@
             font-weight: 900;
         }
     }
+}
+
+
+/* back-top */
+
+.back-top {
+    display: none;
+    position: fixed;
+    bottom: 110px;
+    right: 2em;
+    a {
+        background: rgba(0, 0, 0, 0.45);
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        transition: 1s;
+        width: 40px;
+        height: 40px;
+        display: block;
+        font-size: 36px;
+        color: #fff;
+        text-align: center;
+        border-radius: 3px 3px;
+        text-decoration: none;
+        &:hover {
+            background-color: #0085a1;
+        }
+    }
+    i {
+        font-size: 16px;
+        line-height: 40px;
+        vertical-align: top;
+    }
+    .fa-chevron-up:before {
+        color: rgba(252, 252, 252, 0.81);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* 返回顶部贴右边 */
+    .back-top {
+        right: 0.5em;
+    }
+}
+
+.progress-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    height: 3px;
+    z-index: 99;
+    background-color: #0A74DA;
 }

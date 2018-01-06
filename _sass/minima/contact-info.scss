@@ -1,0 +1,38 @@
+/**
+* contact-info
+*/
+
+.contact-info {
+    background: #F9F9F9;
+    border-top: 1px solid rgba(230, 230, 230, 0.99);
+    .contact-info-content {
+        padding: 20px 10px;
+        font-size: 14px;
+    }
+    p {
+        margin-left: 30px;
+        font-size: 16px;
+    }
+    ul {
+        list-style: none;
+        li {
+            float: left;
+            width: 130px;
+            padding-left: 30px;
+            margin-top: 15px;
+            dt {
+                font-size: 16px;
+                color: #1E1E1E;
+                line-height: 22px;
+                margin-bottom: 5px;
+            }
+            dd {
+                line-height: 25px;
+                color: #6D6D6D;
+                a {
+                    color: #6E717C;
+                }
+            }
+        }
+    }
+}

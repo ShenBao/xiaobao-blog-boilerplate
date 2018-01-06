@@ -1,6 +1,14 @@
-# blog-boilerplate
+# xiaobao-blog-boilerplate
 
-blog-boilerplate
 
-ps：基于react的blog模板，可托管至github，也可以托管至自己的服务器
+[预览](https://shenbao.github.io/xiaobao-blog)
+
+## 博客模板
+
+
+- 添加顶部阅读进度条
+- 添加返回顶部
+- 注册disqus，添加disqus评论（需要科学上网）
+- 注册并添加了hypercomments评论，支持匿名评论,支持国内访问
+
 

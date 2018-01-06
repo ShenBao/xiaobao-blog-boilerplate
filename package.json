@@ -1,0 +1,16 @@
+{
+  "name": "shenbao-learn-notes",
+  "version": "1.0.0",
+  "description": "*Minima is a one-size-fits-all Jekyll theme for writers*. It's Jekyll's default (and first) theme. It's what you get when you run `jekyll new`.",
+  "main": "index.js",
+  "scripts": {
+    "start": "jekyll serve --port 4000",
+    "dev": "jekyll serve --port 4000 --host 192.168.1.6",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "normalize.css": "^7.0.0"
+  }
+}

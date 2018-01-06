@@ -1,0 +1,42 @@
+# Welcome to Jekyll!
+# Site settings
+
+site_title: >-      # Site title
+  小宝的博客 | XiaoBao Blog
+
+title: 小宝的博客    # Site nav title
+email: >-           # Site author email
+  shenbaoone@gmail.com
+
+icon: "/img/config/author-100.png"
+description: >-     # Site description
+  描述
+keywords: >-        # Site keywords
+  关键字
+baseurl: "/xiaobao-blog"   # the subpath of your site, e.g. /blog
+url: ""                           # site, e.g. http://example.com
+  
+site_url: https://shenbao.github.io
+creat_time: 2018
+
+# twitter_username: jekyllrb
+github_username:  ShenBao
+disqus_username: ShenBao
+hypercomments_userid: 91931
+
+
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+
+
+
+
+
+
+
+
+
+
+

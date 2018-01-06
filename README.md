@@ -1,7 +1,9 @@
 # xiaobao-blog-boilerplate
 
 
-[预览](https://shenbao.github.io/xiaobao-blog)
+- <a href="https://shenbao.github.io/xiaobao-blog" target="_blank">预览</a>
+- <a href="https://shenbao.github.io/xiaobao-blog/comment.html" target="_blank">反馈评论</a>
+
 
 ## 博客模板
 

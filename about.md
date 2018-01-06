@@ -22,3 +22,6 @@ Hey,I'm <strong>
 
 <img src="{{ "/img/config/myerweima-QQ-1.png" | relative_url }}" alt="我的QQ二维码" width="240">
 <img src="{{ "/img/config/myerweima-wechat-1.png" | relative_url }}" alt="我的微信二维码" width="240">
+
+
+{% include comments.html %}

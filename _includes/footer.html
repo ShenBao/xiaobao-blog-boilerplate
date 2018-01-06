@@ -1,3 +1,55 @@
+<div class="contact-info">
+  <p>
+    <a href="{{ "/about" | relative_url }}" target="_blank">关于我</a>
+  </p>
+  <ul>
+    <li>
+      <dl>
+        <dt>社交账号</dt>
+        <dd>
+          <a href="https://weibo.com/{{ site.weibo_username }}" target="_blank">微博</a>
+        </dd>
+        <dd>
+          <a href="{{ "/about" | relative_url }}" target="_blank">关于我</a>
+        </dd>
+      </dl>
+    </li>
+    <li>
+      <dl>
+        <dt>社区</dt>
+        <dd>
+          <a href="https://github.com/{{ site.github_username }}" target="_blank">GitHub</a>
+        </dd>
+        <dd>
+          <a href="https://cnodejs.org/user/{{ site.cnode_username }}" target="_blank">Cnode</a>
+        </dd>
+        <dd>
+          <a href="https://www.zhihu.com/people/{{ site.zhihu_username }}/posts" target="_blank">知乎</a>
+        </dd>
+      </dl>
+    </li>
+    <li>
+      <dl>
+        <dt>推荐链接</dt>
+        <dd>
+          <a href="https://shenbao.github.io" target="_blank">Blog</a>
+        </dd>
+        <dd>
+          <a href="https://shenbao.github.io/shenbao-learn-notes" target="_blank">Notes</a>
+        </dd>
+      </dl>
+    </li>
+    <li>
+      <dl>
+        <dt>其他</dt>
+        <dd>
+          <a href="https://shenbao.github.io/angular-cnode" target="_blank">Angular CNode</a>
+        </dd>
+      </dl>
+    </li>
+  </ul>
+</div>
+
 <footer class="site-footer">
   <p>
     Copyright {{ site.creat_time }} © {{ site.site_url }}

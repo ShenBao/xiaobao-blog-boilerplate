@@ -1,3 +1,36 @@
+.contact-info {
+    width: 100%;
+    background: #F9F9F9;
+    border-top: 1px solid rgba(230, 230, 230, 0.99);
+    padding: 25px;
+    font-size: 14px;
+    p {
+        margin-left: 30px;
+        font-size: 16px;
+    }
+    ul {
+        list-style: none;
+        li {
+            float: left;
+            width: 150px;
+            margin-top: 15px;
+            dt {
+                font-size: 16px;
+                color: #1E1E1E;
+                line-height: 22px;
+                margin-bottom: 5px;
+            }
+            dd {
+                line-height: 25px;
+                color: #6D6D6D;
+                a {
+                    color: #6E717C;
+                }
+            }
+        }
+    }
+}
+
 .site-footer {
     background-color: black;
     padding: 10px 0;
@@ -13,7 +46,7 @@
         font-size: 14px;
         line-height: 20px;
         .author {
-            color:  #1756a9;
+            color: #1756a9;
             font-weight: 900;
         }
     }

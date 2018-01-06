@@ -20,10 +20,13 @@ site_url: https://shenbao.github.io
 creat_time: 2018
 
 # twitter_username: jekyllrb
+weibo_username:  ShenBaoPro
+zhihu_username:  shenbao
 github_username:  ShenBao
+cnode_username:  ShenBao
+
 disqus_username: ShenBao
 hypercomments_userid: 91931
-
 
 markdown: kramdown
 plugins:

@@ -25,6 +25,7 @@ layout: index
 <style>
     .index {
         padding-top: 40px;
+        padding-bottom: 40px;
     }
     .index h3{
         /* text-align: center; */
@@ -33,7 +34,6 @@ layout: index
     }
     .index .info {
         padding-top: 40px;
-        padding-bottom: 40px;
     }
     .index .info a {
         text-decoration: none;

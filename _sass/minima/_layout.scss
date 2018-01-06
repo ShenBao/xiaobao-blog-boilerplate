@@ -12,6 +12,42 @@ html {
     flex-direction: column;
 }
 
+table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all;
+    code {
+        background: none;
+        color: #d20992
+    }
+    th {
+        font-weight: bold;
+    }
+    td {
+        padding: 6px 13px;
+        border: 1px solid #ddd;
+    }
+    tr {
+        background-color: #fff;
+        border-top: 1px solid #ccc;
+    }
+    tr:nth-child(2n) {
+        background-color: #f8f8f8;
+    }
+}
+
+img.emoji {
+    width: 20px;
+    max-width: 20px !important;
+    height: 20px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background-size: 20px;
+}
+
 
 /**
  * Wrapper

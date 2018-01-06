@@ -5,9 +5,6 @@ permalink: /comment
 ---
 
 
-<br>
-<br>
-
 {% include comments.html %}
 
 

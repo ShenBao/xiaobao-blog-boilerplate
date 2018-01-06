@@ -1,8 +1,9 @@
 <div class="contact-info">
   <div class="contact-info-content">
-    <p>
-      <a href="{{ "/about" | relative_url }}" target="_blank">关于我</a>
-    </p>
+    <div>
+      <a class="about" href="{{ "/about" | relative_url }}" target="_blank">关于我</a>
+      <a class="comment" href="{{ "/comment" | relative_url }}">反馈评论入口</a>
+    </div>
     <ul>
       <li>
         <dl>
@@ -71,5 +72,6 @@
 </div>
 
 <script src="{{ "/assets/js/jquery.min.js " | relative_url }}"></script>
+<script src="{{ "/assets/js/emojify.js " | relative_url }}"></script>
 <script src="{{ "/assets/js/xiaobao-blog.js " | relative_url }}"></script>
 

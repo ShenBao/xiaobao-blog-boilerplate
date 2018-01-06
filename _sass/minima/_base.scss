@@ -153,7 +153,7 @@ pre {
 /**
  * Wrapper
  */
-.wrapper, .contact-info{
+.wrapper, .contact-info-content{
   max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
   max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
   margin-right: auto;

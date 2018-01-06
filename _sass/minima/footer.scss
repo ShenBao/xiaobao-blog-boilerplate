@@ -2,11 +2,19 @@
     background-color: black;
     padding: 10px 0;
     color: white;
-    line-height: 30px;
+    line-height: 25px;
     p {
         text-align: center;
     }
     a {
         color: white;
+    }
+    .theme {
+        font-size: 14px;
+        line-height: 20px;
+        .author {
+            color:  #1756a9;
+            font-weight: 900;
+        }
     }
 }

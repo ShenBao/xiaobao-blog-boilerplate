@@ -1,52 +1,32 @@
 <div class="contact-info">
   <div class="contact-info-content">
     <div>
-      <a class="about" href="{{ "/about" | relative_url }}" target="_blank">关于我</a>
-      <a class="comment" href="{{ "/comments" | relative_url }}">反馈评论入口</a>
+      <a class="about"
+        href="{{ site.data.contactInfo.about.path | relative_url }}"
+        target="_blank">
+        {{ site.data.contactInfo.about.title }}
+      </a>
+      <a class="comment"
+        href="{{ site.data.contactInfo.comments.path | relative_url }}">
+        {{ site.data.contactInfo.comments.title }}
+      </a>
     </div>
+
     <ul>
-      <li>
-        <dl>
-          <dt>社交账号</dt>
-          <dd>
-            <a href="https://weibo.com/{{ site.weibo_username }}" target="_blank">微博</a>
-          </dd>
-        </dl>
-      </li>
-      <li>
-        <dl>
-          <dt>社区</dt>
-          <dd>
-            <a href="https://github.com/{{ site.github_username }}" target="_blank">GitHub</a>
-          </dd>
-          <dd>
-            <a href="https://cnodejs.org/user/{{ site.cnode_username }}" target="_blank">Cnode</a>
-          </dd>
-          <dd>
-            <a href="https://www.zhihu.com/people/{{ site.zhihu_username }}/posts" target="_blank">知乎</a>
-          </dd>
-        </dl>
-      </li>
-      <li>
-        <dl>
-          <dt>推荐链接</dt>
-          <dd>
-            <a href="https://shenbao.github.io" target="_blank">Blog</a>
-          </dd>
-          <dd>
-            <a href="https://shenbao.github.io/shenbao-learn-notes" target="_blank">Notes</a>
-          </dd>
-        </dl>
-      </li>
-      <li>
-        <dl>
-          <dt>其他</dt>
-          <dd>
-            <a href="https://shenbao.github.io/angular-cnode" target="_blank">Angular CNode</a>
-          </dd>
-        </dl>
-      </li>
+        {% for group in site.data.contactInfo.group  %}
+          <li>
+            <dl>
+              <dt>{{ group.title }}</dt>
+                {% for item in group.list %}
+                <dd>
+                    <a href="{{ item.path }}" target="_blank">{{ item.title }}</a>
+                  </dd>
+                {% endfor %}
+            </dl>
+          </li>
+        {% endfor %}
     </ul>
+    
   </div>
 </div>
 
@@ -58,7 +38,18 @@
     Author Email: {{ site.email }}
   </p>
   <p class="theme">
-    Theme by <a href="https://github.com/ShenBao/xiaobao-blog" target="_blank" class="author">ShenBao</a>
+    Theme by 
+    <a href="https://github.com/ShenBao"
+      target="_blank" class="author"
+      title="点击这里去GitHub看看">
+      ShenBao
+    </a>
+     | 
+    <iframe
+        style="margin-left: 2px; margin-bottom:-5px;"
+        frameborder="0" scrolling="0" width="90px" height="20px"
+        src="https://ghbtns.com/github-btn.html?user=ShenBao&repo=xiaobao-blog&type=star&count=true" >
+    </iframe>
   </p>
 </footer>
 
@@ -71,7 +62,9 @@
   </a>
 </div>
 
-<script src="{{ "/assets/js/jquery.min.js " | relative_url }}"></script>
-<script src="{{ "/assets/js/emojify.js " | relative_url }}"></script>
-<script src="{{ "/assets/js/xiaobao-blog.js " | relative_url }}"></script>
+
+<script src="{{ "/assets/js/config.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/jquery.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/emojify.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/xiaobao-blog.js" | relative_url }}"></script>
 

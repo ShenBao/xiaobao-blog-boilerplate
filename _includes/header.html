@@ -3,7 +3,11 @@
   <div class="wrapper">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
-    <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <a class="site-title"
+      href="{{ "/home" | relative_url }}"
+      >
+      {{ site.title | escape }}
+    </a>
   
     {% if page_paths %}
       <nav class="site-nav">
@@ -27,11 +31,20 @@
           {% endfor %} -->
 
           {% for item in site.data.nav %}
-            <a class="page-link" href="{{ item.path | relative_url }}">{{ item.title | escape }}</a>
+            <a class="page-link"
+              href="{{ item.path | relative_url }}"
+              >
+              <!-- {{ item.path | escape }} -->
+              {{ item.title | escape }}
+            </a>
           {% endfor %}
 
         </div>
       </nav>
     {% endif %}
+
   </div>
 </header>
+
+<!-- <p>今日名言</p> -->
+

@@ -1,0 +1,37 @@
+.home {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    h3 {
+        /* text-align: center; */
+        font-size: 30px;
+        line-height: 60px;
+    }
+    .info {
+        padding-top: 40px;
+    }
+    .info a {
+        text-decoration: none;
+    }
+    .btn {
+        display: inline-block;
+        height: 38px;
+        width: 120px;
+        border: 1px solid #fff;
+        border-radius: 19px;
+        color: #fff;
+        line-height: 38px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        font-weight: normal;
+        margin-right: 10px;
+    }
+    .btn-primary {
+        background: #22ab28;
+        border-color: #209425;
+    }
+    .btn-secondary {
+        border: 1px solid #22ab28;
+        border-radius: 100px;
+        color: #22ab28;
+    }
+}

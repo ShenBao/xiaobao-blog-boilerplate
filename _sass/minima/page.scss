@@ -3,11 +3,16 @@
  */
 
 .page-content {
-    padding: $spacing-unit 0;
-    flex: 1; // min-height: 100%;
+    padding: 30px 0 50px;
+    ;
+    flex: 1;
     color: #333333;
     a {
         color: #000000;
+    }
+    ul,
+    ol {
+        padding-left: 5px;
     }
 }
 

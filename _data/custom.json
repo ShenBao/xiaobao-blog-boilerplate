@@ -1,0 +1,36 @@
+[
+    {
+        "title": "第一阶段",
+        "list": [
+            {
+                "path": "/md/custom/test",
+                "title": "第一篇文章"
+            },
+            {
+                "path": "/md/custom/test",
+                "title": "第二篇文章"
+            },
+            {
+                "path": "/md/custom/test",
+                "title": "第二篇文章"
+            }
+        ]
+    },
+    {
+        "title": "第二阶段",
+        "list": [
+            {
+                "path": "/md/custom/test",
+                "title": "第一篇文章"
+            },
+            {
+                "path": "/md/custom/test",
+                "title": "第二篇文章"
+            },
+            {
+                "path": "/md/custom/test",
+                "title": "第二篇文章"
+            }
+        ]
+    }
+]

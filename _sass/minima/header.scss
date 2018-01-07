@@ -43,6 +43,7 @@
             color: $text-color;
             line-height: $base-line-height;
             text-align: left; // Gaps between nav items, but not on the last one
+            text-transform: uppercase;
             &:not(:last-child) {
                 margin-right: 20px;
             }

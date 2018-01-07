@@ -1,7 +1,15 @@
 [
     {
-        "path": "list",
-        "title": "列表"
+        "path": "index",
+        "title": "首页"
+    },
+    {
+        "path": "archives",
+        "title": "归档"
+    },
+    {
+        "path": "custom",
+        "title": "自定义"
     },
     {
         "path": "about",

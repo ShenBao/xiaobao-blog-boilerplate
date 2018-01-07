@@ -4,7 +4,7 @@
 site_title: >-      # Site title
   小宝的博客 | XiaoBao Blog
 
-title: 小宝的博客    # Site nav title
+title: XiaoBao Blog    # Site nav title
 email: >-           # Site author email
   shenbaoone@gmail.com
 
@@ -27,13 +27,26 @@ zhihu_username:  shenbao
 github_username:  ShenBao
 cnode_username:  ShenBao
 
-
 disqus_username: ShenBao
 hypercomments_userid: 91931
 
-markdown: kramdown
+paginate: 2
+paginate_path: "page:num"
+
+
+markdown: kramdown # kramdown,redcarpet,rdiscount
+kramdown:
+input: GFM                            # use Github Flavored Markdown !important
+highlighter: rouge
+permalink: pretty
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+
+
+gems: [jekyll-paginate]
+
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 
 

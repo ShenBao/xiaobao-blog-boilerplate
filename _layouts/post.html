@@ -17,6 +17,18 @@ layout: default
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
+    
+    <p class="the-end" title="THE END | 全文结束">
+        <b>【 THE END 】</b>
+    </p>
+
+    <p>
+        ------
+        <a  href="https://github.com/{{site.github_username}}" class="author">
+            {% if page.author %}{{ page.author }}{% else %}{{ site.site_author }}{% endif %}
+        </a>
+        on {{ page.date | date: "%B %-d, %Y" }}
+    </p>
   </div>
 
   {% include comments.html %}

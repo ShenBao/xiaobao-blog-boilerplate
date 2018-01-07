@@ -1,12 +1,15 @@
 # xiaobao-blog-boilerplate
 
 
-- <a href="https://shenbao.github.io/xiaobao-blog" target="_blank">预览</a>
-- <a href="https://shenbao.github.io/xiaobao-blog/comment.html" target="_blank">反馈评论</a>
+- <a href="https://shenbao.github.io/xiaobao-blog/home" target="_blank">预览</a>
+- <a href="https://shenbao.github.io/xiaobao-blog/comments" target="_blank">反馈评论</a>
+
+预览二维码地址：
+
+<img src="./img/qrcode.png" width="150">
 
 
-## 博客模板
-
+## Features
 
 - 添加顶部阅读进度条
 - 添加返回顶部
@@ -20,3 +23,9 @@
 - 自动抓取目录(可以关闭)
 - 支持自定义列表
 - 
+
+
+## License 
+
+The MIT License (MIT)
+

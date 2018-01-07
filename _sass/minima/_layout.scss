@@ -54,7 +54,8 @@ img.emoji {
  */
 
 .wrapper,
-.contact-info-content {
+.contact-info-content,
+.license-content {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
     max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
     margin-right: auto;
@@ -67,6 +68,21 @@ img.emoji {
         max-width: calc(#{$content-width} - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
+    }
+}
+
+.comments {
+    .comments-cue {
+        border-top: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+        padding: 10px 0;
+        font-size: 10px;
+        color: #636c72;
+        font-style: oblique;
+    }
+    .comment,
+    .hc__right {
+        padding: 10px !important;
     }
 }
 

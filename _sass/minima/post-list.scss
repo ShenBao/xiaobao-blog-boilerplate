@@ -31,6 +31,12 @@
 //         }
 //     }
 // }
+.post-list {
+    a:hover {
+        color: #0085A1;
+    }
+}
+
 .post-content {
     legend {
         color: #0085a1;
@@ -57,7 +63,6 @@
                 text-decoration: none;
                 &:hover {
                     color: #0085a1;
-                    text-decoration: underline;
                 }
             }
         }

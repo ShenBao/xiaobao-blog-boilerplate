@@ -20,7 +20,11 @@
             }
             .comment {
                 float: right;
-                font-size: 12px;
+                font-size: 10px;
+                -webkit-transform: scale(0.8);
+                -moz-transform: scale(0.8);
+                -o-transform: scale(0.8);
+                transform: scale(0.8);
             }
         }
     }
@@ -47,5 +51,29 @@
                 }
             }
         }
+    }
+}
+
+.license {
+    background: #F9F9F9;
+    border-top: 1px solid rgba(230, 230, 230, 0.99);
+    .license-content{
+        max-width: 880px;
+        padding: 20px 0;
+        h3 {
+            font-size: 16px;
+            text-align: center;
+        }
+        img {
+            margin-left: 20px;
+            height: 25px;
+        }
+        p {
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 12px;
+            text-align: center;
+        }
+
     }
 }

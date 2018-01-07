@@ -3,10 +3,6 @@
  */
 
 .post {
-    ul,
-    ol {
-        padding-left: 5px;
-    }
     .post-header {
         margin-bottom: $spacing-unit;
         .post-title {
@@ -19,8 +15,12 @@
         }
         .post-meta {
             line-height: 2.5rem;
+            font-size: 14px;
             span {
                 font-style: italic;
+            }
+            time {
+                font-size: 12px;
             }
         }
     }

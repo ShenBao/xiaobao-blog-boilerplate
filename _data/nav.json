@@ -8,6 +8,10 @@
         "title": "归档"
     },
     {
+        "path": "tags",
+        "title": "标签"
+    },
+    {
         "path": "custom",
         "title": "自定义"
     },

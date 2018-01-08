@@ -1,18 +1,34 @@
 ---
 layout: default
 ---
-<article class="post" itemscope>
+<article class="post">
 
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
-      <span>{% if page.author %}{{ page.author }}{% else %}{{ site.site_author }}{% endif %}</span>
+      <span>
+        <a href="https://github.com/ShenBao" target="_blank">
+          {% if page.author %}
+            {{ page.author }}
+          {% else %}
+            {{ site.site_author }}
+          {% endif %}
+        </a>
+      </span>
        ·⊙· 
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {% assign date_format = site.minima.date_format | default: "%B %-d, %Y %H:%M:%S" %}
         {{ page.date | date: date_format }}
       </time>
     </p>
+    {% if page.tags %}
+    <p class="tags">
+      <a class="link" href="{{ "tags" | relative_url }}" target="_blank">分类：</a>
+        {% for tag in page.tags %}
+        <a class="tag" href="{{ site.baseurl }}/tags/#ref-{{ tag }}" title="{{ tag }}" target="_blank">{{ tag }}</a>
+        {% endfor %}
+    </p>
+    {% endif %}
   </header>
 
   <div class="post-content" itemprop="articleBody">
@@ -21,7 +37,7 @@ layout: default
     <p class="the-end" title="THE END | 全文结束">
         <b>【 THE END 】</b>
     </p>
-
+    
     <p>
         ------
         <a  href="https://github.com/{{site.github_username}}" class="author">
@@ -29,6 +45,26 @@ layout: default
         </a>
         on {{ page.date | date: "%B %-d, %Y" }}
     </p>
+
+    <ul class="pager">
+      <li class="previous">
+          {% if page.previous.url %}
+            <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
+            Previous<br>
+            <span>{{page.previous.title}}</span>
+            </a>
+            {% endif %}
+        </li>
+        <li class="next">
+            {% if page.next.url %}
+            <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
+            Next<br>
+            <span>{{page.next.title}}</span>
+            </a>
+            {% endif %}
+        </li>
+    </ul>
+
   </div>
 
   {% include comments.html %}

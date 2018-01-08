@@ -12,6 +12,10 @@ html {
     flex-direction: column;
 }
 
+a {
+    cursor: pointer;
+}
+
 table {
     display: block;
     width: 100%;
@@ -79,6 +83,9 @@ img.emoji {
         font-size: 10px;
         color: #636c72;
         font-style: oblique;
+        span {
+            color: #0085A1;
+        }
     }
     .comment,
     .hc__right {

@@ -1,8 +1,10 @@
 ---
 layout: post
-title:  "Hello, Blog!"
+title:  "Hello,Welcome to XiaoBao Blog!"
 date:   2018-01-05 15:29:01 +0800
 categories: 
+tags:
+    - Blog
 ---
 
 ## 正文

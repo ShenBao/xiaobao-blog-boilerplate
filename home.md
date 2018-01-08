@@ -16,7 +16,15 @@ layout: index
     </h3>
 
     <div class="info">
-        <a class="btn btn-primary" href="{{ "/about" | relative_url }}">了解小宝</a>
-        <a class="btn btn-secondary" href="https://github.com/ShenBao/" target="_blank">GitHub</a>
+        <a class="btn btn-primary"
+            href="{{ "/about" | relative_url }}"
+            title="了解小宝"
+            >
+            了解小宝
+        </a>
+        <a class="btn btn-secondary"
+            href="https://github.com/ShenBao/" target="_blank">
+            GitHub
+        </a>
     </div>
 </div>

@@ -7,18 +7,38 @@
     padding: 10px 0 30px;
     color: white;
     line-height: 25px;
-    p {
-        text-align: center;
-    }
     a {
-        color: white;
+        color: #FFF;
     }
-    .theme {
-        font-size: 14px;
-        line-height: 20px;
-        .author {
-            color: #1756a9;
-            font-weight: 900;
+    .license-content {
+        max-width: 880px;
+        padding: 10px 0 5px;
+        img {
+            margin-left: 20px;
+            height: 25px;
+        }
+        p {
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 12px;
+            text-align: center;
+            line-height: 1.5;
+        }
+    }
+    .copyright-content {
+        p {
+            text-align: center;
+        }
+        a {
+            color: white;
+        }
+        .theme {
+            font-size: 14px;
+            line-height: 20px;
+            .author {
+                color: #1756a9;
+                font-weight: 900;
+            }
         }
     }
 }
@@ -33,6 +53,7 @@
     right: 2em;
     a {
         background: rgba(0, 0, 0, 0.45);
+        background: #0085a1;
         -webkit-border-radius: 7px;
         -moz-border-radius: 7px;
         -webkit-transition: 1s;

@@ -48,6 +48,10 @@
             line-height: $base-line-height;
             text-align: left; // Gaps between nav items, but not on the last one
             text-transform: uppercase;
+            text-decoration: none;
+            &:hover {
+                color: #0085A1;
+            }
             &:not(:last-child) {
                 margin-right: 20px;
             }
@@ -94,7 +98,7 @@
                 padding: 5px 20px;
                 &:not(:last-child) {
                     margin-right: 0;
-                } // margin-left: 20px;
+                }
             }
         }
     }

@@ -38,8 +38,8 @@ markdown: kramdown # kramdown,redcarpet,rdiscount
 kramdown:
 input: GFM                            # use Github Flavored Markdown !important
 highlighter: rouge
-permalink: pretty
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+#permalink: pretty
+exclude: ["node_modules","package.json","README.md",]
 
 
 gems: [jekyll-paginate]

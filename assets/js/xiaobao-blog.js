@@ -11,11 +11,17 @@
 
         initialization: function () {
 
+            this.todayLogion();
             this.backTop();
             this.progress();
             this.emojify();
             this.clickHearts();
 
+        },
+
+        todayLogion: function(){
+            var i = parseInt(Math.random() * logionList.length);
+            document.getElementById("today-logion").innerHTML = logionList[i];
         },
 
         backTop: function () {

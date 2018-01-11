@@ -2,10 +2,10 @@
  * Site header
  */
 
- .site-icon {
-     display: none;
- }
- 
+.site-icon {
+    display: none;
+}
+
 .site-header {
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
@@ -101,5 +101,13 @@
                 }
             }
         }
+    }
+}
+
+.today-logion-container {
+    .today-logion {
+        margin: 15px auto 15px;
+        color: #999;
+        font-size: 13px;
     }
 }

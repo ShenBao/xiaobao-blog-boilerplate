@@ -1,7 +1,6 @@
 ---
 layout: page
-title: tags
-description: 
+title: "tags"
 ---
 
 <div class="tags">

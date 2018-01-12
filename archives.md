@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "归档"
-permalink: /archives/
 ---
 
 <!-- 这里获取的是_posts文件夹里的 -->

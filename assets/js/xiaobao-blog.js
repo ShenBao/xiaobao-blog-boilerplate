@@ -7,6 +7,7 @@
     };
 
     ShenBaoBlogApplication.prototype = {
+
         constructor: ShenBaoBlogApplication,
 
         initialization: function () {
@@ -143,9 +144,7 @@
             }
         }
 
-
     };
-
 
     $(function () {
         global.BlogApplication = new ShenBaoBlogApplication();

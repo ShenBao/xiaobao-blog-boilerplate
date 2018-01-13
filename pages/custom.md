@@ -7,7 +7,7 @@ title: "自定义列表内容"
 
 <div>
     {% assign groupIndex = 0 %}
-    {% for group in site.data.custom  %}
+    {% for group in site.data.custom.list  %}
         {% assign groupIndex = groupIndex | plus: 1 %}
         <div class="post-content">
             <legend>
@@ -18,7 +18,7 @@ title: "自定义列表内容"
                 {% for item in group.list %}
                 <li>
                     <a class="post-link"
-                        href="{{ item.path | relative_url }}"
+                        href="{{ site.baseurl }}{{ site.data.custom.basePath }}{{ item.path }}"
                         >
                         {% assign index = index | plus: 1 %}
                         <small>{{ groupIndex }}-{{ index }}. </small>

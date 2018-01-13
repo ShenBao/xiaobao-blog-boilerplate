@@ -47,7 +47,7 @@
             color: $text-color;
             line-height: $base-line-height;
             text-align: left; // Gaps between nav items, but not on the last one
-            text-transform: uppercase;
+            // text-transform: uppercase; 是否需要大写
             text-decoration: none;
             &:hover {
                 color: #0085A1;

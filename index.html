@@ -7,7 +7,7 @@ title: "首页"
 
     {% for post in paginator.posts %}
     <div class="post-preview">
-        <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
+        <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
             <h2 class="post-title">
                 {{ post.title }}
             </h2>
@@ -30,7 +30,7 @@ title: "首页"
     <!-- Pager -->
     <h5 class="page-index">
         Page: {{ paginator.page }} of 
-        <a href="/page{{ paginator.total_pages }}/">
+        <a href="{{ site.baseurl }}/page{{ paginator.total_pages }}/">
             {{ paginator.total_pages }}
         </a>
     </h5>
@@ -39,14 +39,14 @@ title: "首页"
     <div class="pager">
         {% if paginator.previous_page %}
             <a class="previous"
-                href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+                href="{{ paginator.previous_page_path | relative_url | replace: '//', '/' }}">
                 &larr; Newer Posts
             </a>
         {% endif %}
     
         {% if paginator.next_page %}
             <a class="next"
-                href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+                href="{{ paginator.next_page_path | relative_url | replace: '//', '/' }}">
                 Older Posts &rarr;
             </a>
         {% endif %}

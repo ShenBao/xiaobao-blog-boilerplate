@@ -1,10 +1,10 @@
 {
     "about": {
-        "path": "/about",
+        "path": "about",
         "title": "关于我"
     },
     "comments": {
-        "path": "/comments",
+        "path": "comments",
         "title": "反馈评论入口"
     },
     "group": [

@@ -1,3 +1,7 @@
+/**
+* tags
+*/
+
 .tags {
     .nav {
         list-style: none;
@@ -11,9 +15,9 @@
             margin-bottom: 8px;
             border-radius: 999em;
             padding: 0 10px;
-            background-color: rgb(0, 133, 161);
+            background-color: $main-color;
             a {
-                color: #FFF;
+                color: $white-color;
                 text-decoration: none;
             }
             span {
@@ -23,8 +27,8 @@
                 font-size: 12px;
                 font-weight: 700;
                 line-height: 1;
-                background-color: #FFF;
-                color: rgb(0, 133, 161);
+                background-color: $white-color;
+                color: $main-color;
                 border-radius: 10px;
                 text-align: center;
             }

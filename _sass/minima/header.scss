@@ -10,7 +10,7 @@
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: $spacing-unit * 1.865;
-    background: #f9f9f9;
+    background: $main-background-color-one;
     .site-title {
         @include relative-font-size(1.625);
         font-weight: 300;
@@ -19,7 +19,7 @@
         margin-bottom: 0;
         float: left;
         text-decoration: none;
-        color: #0085a1;
+        color: $main-color;
         &:link {
             text-decoration: none;
         }
@@ -28,7 +28,7 @@
         }
         &:hover {
             text-decoration: none;
-            color: #209425;
+            color: $mian-hover-color;
         }
         &:active {
             text-decoration: none;
@@ -44,16 +44,17 @@
             display: none;
         }
         .page-link {
+            font-size: 14px;
             color: $text-color;
             line-height: $base-line-height;
             text-align: left; // Gaps between nav items, but not on the last one
             // text-transform: uppercase; 是否需要大写
             text-decoration: none;
             &:hover {
-                color: #0085A1;
+                color: $main-color;
             }
             &:not(:last-child) {
-                margin-right: 20px;
+                margin-right: 15px;
             }
         }
         @include media-query($on-palm) {
@@ -96,6 +97,7 @@
             .page-link {
                 display: block;
                 padding: 5px 20px;
+                font-size: 16px;
                 &:not(:last-child) {
                     margin-right: 0;
                 }

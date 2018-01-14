@@ -3,7 +3,7 @@
 */
 
 .contact-info {
-    background: #F9F9F9;
+    background: $main-background-color-one;
     border-top: 1px solid rgba(230, 230, 230, 0.99);
     .contact-info-content {
         padding: 20px 10px;
@@ -15,6 +15,9 @@
             height: 25px;
             line-height: 25px;
             clear: both;
+            a {
+                color: $main-color;
+            }
             .about {
                 float: left;
             }
@@ -39,15 +42,18 @@
             margin-top: 15px;
             dt {
                 font-size: 16px;
-                color: #1E1E1E;
+                color: $text-color;
                 line-height: 22px;
                 margin-bottom: 5px;
             }
             dd {
                 line-height: 25px;
-                color: #6D6D6D;
+                color: $link-color;
                 a {
-                    color: #6E717C;
+                    color: $link-color;
+                    &:hover {
+                        color: $main-color;
+                    }
                 }
             }
         }

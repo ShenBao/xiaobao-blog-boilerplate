@@ -3,6 +3,7 @@
  */
 
 .post {
+    color: $text-color;
     .post-header {
         margin-bottom: $spacing-unit;
         .post-title {
@@ -37,7 +38,7 @@
                 display: inline-block;
                 padding: 0 5px;
                 &:hover {
-                    color: #0085A1;
+                    color: $main-color;
                 }
             }
         }
@@ -46,7 +47,7 @@
         margin-bottom: 10px;
         line-height: 1.5;
         font-size: 16px;
-        color: #404040;
+        color: $text-color;
         .post-list {
             li {
                 padding: .3rem 0rem;
@@ -78,9 +79,8 @@
         margin: 30px 0;
     }
     .author {
-        color: #0085A1;
+        color: $main-color;
     }
-
     .pager {
         margin: 20px 0 0 !important;
         padding: 0px !important;
@@ -92,9 +92,9 @@
             &:last-child {
                 float: right;
             }
-            >a{
+            >a {
                 display: block;
-                border: 1px solid #CCC;
+                border: 1px solid $ccc-color;
                 padding: 10px;
                 text-decoration: none;
                 text-align: center;
@@ -105,7 +105,7 @@
                 font-weight: 800;
                 letter-spacing: 1px;
                 padding: 10px;
-                background-color: white;
+                background-color: $white-color;
                 border-radius: 0;
                 @media only screen and (min-width: 768px) {
                     font-size: 14px;
@@ -113,14 +113,15 @@
                 }
             }
             >a {
-                color: lighten(black, 25%);;
+                color: $text-color;
+                ;
             }
             >a:hover,
             >a:focus {
-                color: white;
-                background-color: #0085A1;
+                color: $white-color;
+                background-color: $main-color;
                 >span {
-                    color: white;
+                    color: $white-color;
                 }
             }
         }
@@ -129,8 +130,9 @@
             >a:hover,
             >a:focus,
             >span {
-                color: lighten(black, 50%);
-                background-color: lighten(black, 25%);;
+                color: lighten($text-color, 50%);
+                background-color: lighten($text-color, 25%);
+                ;
                 cursor: not-allowed;
             }
         }

@@ -4,12 +4,12 @@
 
 .page-content {
     padding: 10px 0 50px;
-    ;
     flex: 1;
-    color: #333333;
+    color: $text-color; // overflow-x: scroll;
+    overflow-x: hidden;
     a {
-        color: #000000;
-    }
+        color: $text-color;
+    } 
     // ul,
     // ol {
     //     padding-left: 5px;

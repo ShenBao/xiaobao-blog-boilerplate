@@ -87,13 +87,10 @@ h6 {
  */
 
 a {
-    color: $brand-color;
+    color: $text-color;
     text-decoration: none;
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
     &:hover {
-        color: $text-color;
+        color: $mian-hover-color;
         text-decoration: underline;
     }
     .social-media-list &:hover {
@@ -131,7 +128,7 @@ code {
     @include relative-font-size(0.9375);
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: $code-background-color;
 }
 
 code {
@@ -148,9 +145,11 @@ pre {
     }
 }
 
-ul,ol {
+ul,
+ol {
     padding-left: 30px;
 }
+
 
 /**
  * Clearfix

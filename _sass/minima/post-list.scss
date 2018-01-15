@@ -20,6 +20,11 @@
         border: 0;
         border-bottom: 1px solid $main-background-color-one;
     }
+    .post-list {
+        li {
+            padding: .3rem 0rem;
+        }
+    }
     .list {
         list-style: none;
         padding-left: 5px;

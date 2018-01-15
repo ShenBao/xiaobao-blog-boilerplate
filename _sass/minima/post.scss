@@ -48,31 +48,39 @@
         line-height: 1.5;
         font-size: 16px;
         color: $text-color;
-        .post-list {
-            li {
-                padding: .3rem 0rem;
+        
+        ul,ol{
+            margin: 10px 0;
+            > li {
+                line-height: 1.8;
             }
         }
         p {
-            margin-bottom: 8px;
-        }
-        h2 {
-            @include relative-font-size(2);
-            @include media-query($on-laptop) {
-                @include relative-font-size(1.75);
-            }
-        }
+            line-height: 2.2;
+            margin-bottom: 6px;
+        } // h2 {
+        //     @include relative-font-size(2);
+        //     @include media-query($on-laptop) {
+        //         @include relative-font-size(1.75);
+        //     }
+        // }
+        // h3 {
+        //     @include relative-font-size(1.625);
+        //     @include media-query($on-laptop) {
+        //         @include relative-font-size(1.375);
+        //     }
+        // }
+        // h4 {
+        //     @include relative-font-size(1.25);
+        //     @include media-query($on-laptop) {
+        //         @include relative-font-size(1.125);
+        //     }
+        // }
+        h2,
+        h3,
         h3 {
-            @include relative-font-size(1.625);
-            @include media-query($on-laptop) {
-                @include relative-font-size(1.375);
-            }
-        }
-        h4 {
-            @include relative-font-size(1.25);
-            @include media-query($on-laptop) {
-                @include relative-font-size(1.125);
-            }
+            font-weight: 900;
+            padding: 8px 0;
         }
     }
     .the-end {

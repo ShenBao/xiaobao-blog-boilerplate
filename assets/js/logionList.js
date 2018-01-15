@@ -1,4 +1,7 @@
 var logionList = [
+    'It’s not about how badly you want something. It’s about what you are capable of!',
+    '光有志向是不够的，重要的是你的能力。 —《疯狂动物城》',
+    '为梦想灼伤了自己 也不要平庸的喘息 ',
     '少抱怨，多思考，未来更美好！',
     '生活除了代码,还有诗和远方!',
     '左眼没有见过右眼一面，不懂安慰，只懂陪它落泪。',

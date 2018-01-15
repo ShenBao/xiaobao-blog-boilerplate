@@ -18,16 +18,19 @@ a {
 
 table {
     display: block;
+    margin: 8px 0;
     width: 100%;
     overflow: auto;
     word-break: normal;
     word-break: keep-all;
+    border-collapse:collapse;
     code {
         background: none;
         color: #d20992
     }
     th {
         font-weight: bold;
+        border: 1px solid $ddd-color;
     }
     td {
         padding: 6px 13px;
@@ -56,6 +59,7 @@ img.emoji {
 /**
  * Wrapper
  */
+
 .today-logion,
 .wrapper,
 .contact-info-content,

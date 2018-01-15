@@ -2,7 +2,7 @@
  * post-list
  */
 
-.post-list {
+ .post-list {
     a:hover {
         color: $mian-hover-color;
     }
@@ -31,7 +31,6 @@
         li {
             padding: .3rem 1.25rem;
             a {
-                display: block;
                 font-family: inherit;
                 font-weight: 500;
                 line-height: 1.5;

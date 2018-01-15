@@ -17,11 +17,11 @@ title: "自定义列表内容"
                 {% assign index = 0 %}
                 {% for item in group.list %}
                 <li>
+                    {% assign index = index | plus: 1 %}
+                    <small>{{ groupIndex }}-{{ index }}. </small>
                     <a class="post-link"
                         href="{{ site.baseurl }}{{ site.data.custom.basePath }}{{ item.path }}"
                         >
-                        {% assign index = index | plus: 1 %}
-                        <small>{{ groupIndex }}-{{ index }}. </small>
                         {{ item.title | escape }}
                     </a>
                 </li>

@@ -1,0 +1,40 @@
+.shenbao-toc-tree-body {
+    position: fixed;
+    right: 40px;
+    top: 70px;
+    width: 150px;
+    background: $main-background-color-one;
+    background: #fdfdfd;;
+    max-height: 60%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    list-style: none;
+    padding: 20px 10px;
+    li {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        line-height: 30px;
+        &.active {
+            background-color: #F5F5F5;
+        }
+        a {
+            color: grey;
+            &:hover {
+                color: $main-color;
+            }
+        }
+        &.H2-nav {
+            padding-left: 10px;
+            font-size: 15px;
+        }
+        &.H3-nav {
+            padding-left: 18px;
+            font-size: 13px;
+        }
+        &.H4-nav {
+            padding-left: 26px;
+            font-size: 11px;
+        }
+    }
+}

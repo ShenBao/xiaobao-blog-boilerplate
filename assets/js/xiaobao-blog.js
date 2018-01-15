@@ -20,7 +20,7 @@
 
         },
 
-        todayLogion: function(){
+        todayLogion: function () {
             var i = parseInt(Math.random() * logionList.length);
             document.getElementById("today-logion").innerHTML = logionList[i];
         },
@@ -63,7 +63,7 @@
 
         emojify: function () {
             emojify.setConfig({
-                emojify_tag_type: 'div', 
+                emojify_tag_type: 'div',
                 only_crawl_id: null,
                 img_dir: globalConfig.emojiImg,
                 ignored_tags: {
@@ -148,6 +148,84 @@
 
     $(function () {
         global.BlogApplication = new ShenBaoBlogApplication();
+
+        var hx = 2;
+        var maxHx = 4;
+        function queryTocTree() {
+            var hxArray = $('.post-content h' + hx);
+            for (var i = 0; i < hxArray.length; i++) {
+                hxArray.eq(i).addClass('shenbao-toc-tree-hx');
+            }
+            hx = hx + 1;
+            if (hx <= maxHx) {
+                queryTocTree();
+            } else {
+                creatTocTree();
+            }
+        }
+        function creatTocTree() {
+            var $tocTree = $('.shenbao-toc-tree-hx');
+            var $tocTreeArray = [];
+            for (let i = 0; i < $tocTree.length; i++) {
+                var tag = $tocTree.eq(i);
+                var item = {};
+                item.tagName = tag.prop("tagName");
+                item.id = tag.prop("id");
+                item.title = tag.text();
+                $tocTreeArray.push(item);
+            }
+            console.log($tocTreeArray);
+            var $tocTreeHTML = '';
+            for (let j = 0; j < $tocTreeArray.length; j++) {
+                // var $item = $('<li></li>').text($tocTreeArray[j].title).addClass($tocTreeArray[j].tagName);
+                var $item = '<li class="' +
+                    $tocTreeArray[j].tagName +
+                    '-nav">' +
+                    '<a ' +
+                    'href="#' +
+                    $tocTreeArray[j].id +
+                    '">' +
+                    $tocTreeArray[j].title +
+                    '</a>' +
+                    '</li>';
+                // console.log($item);
+                $tocTreeHTML += $item;
+            }
+            $('.shenbao-toc-tree-body').html($tocTreeHTML);
+
+            setTimeout(sss, 3000);
+        }
+
+        function sss() {
+            var fl = document.getElementsByClassName('shenbao-toc-tree-hx');
+            var ul = $('.shenbao-toc-tree-body')[0];
+            var li = ul.getElementsByTagName('li');
+            var offsetTopArray = [];
+            for (let m = 0; m < fl.length; m++) {
+                offsetTopArray.push(fl[m].offsetTop);
+            }
+            console.log(offsetTopArray)
+            window.addEventListener("scroll", function () {
+                var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+                console.log(scrollTop);
+
+                for (i in fl) {
+                    if (fl[i].offsetTop - scrollTop > -(offsetTopArray[i + 1] - offsetTopArray[i])) {
+                        that = li[i];
+                        for (var j = 0; j < li.length; j++) {
+                            if (li[j] != that) {
+                                $(li[j]).removeClass('active');
+                            }
+                        }
+                        $(li[i]).addClass('active');
+                        return false
+                    }
+                }
+            }, 0)
+        }
+        // queryTocTree();
+
+
     });
 
 })(this, this.$, document);

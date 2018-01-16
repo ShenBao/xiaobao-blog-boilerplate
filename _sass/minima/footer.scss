@@ -42,6 +42,37 @@
     }
 }
 
+/**
+* code-edit
+*/
+
+.code-edit {
+    position: fixed;
+    bottom: 60px;
+    left: 2em;
+    a {
+        background: $main-color;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        transition: 1s;
+        width: 40px;
+        height: 40px;
+        display: block;
+        color: $white-color;
+        text-align: center;
+        border-radius: 3px 3px;
+        text-decoration: none;
+        color: azure;
+        font-size: 16px;
+        line-height: 40px;
+        text-align: center;
+        &:hover {
+            background-color: $main-color;
+        }
+    }
+}
 
 /* back-top */
 

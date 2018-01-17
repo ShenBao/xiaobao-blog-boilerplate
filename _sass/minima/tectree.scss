@@ -9,9 +9,9 @@
     top: 70px;
     width: 180px;
     background: #fdfdfd;
-    overflow: hidden;
-    border-radius: 15px;
-    border: 1px solid #dddddd;
+    // overflow: hidden;
+    // border-radius: 15px;
+    // border: 1px solid #dddddd;
     .shenbao-toc-tree-content {
         padding: 5px;
         box-sizing: border-box;
@@ -65,8 +65,8 @@
 }
 
 #shenbao-toc-tree-content::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: #F5F5F5;
+    // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: rgb(238, 237, 237);
 }
 
 #shenbao-toc-tree-content::-webkit-scrollbar {
@@ -75,6 +75,6 @@
 }
 
 #shenbao-toc-tree-content::-webkit-scrollbar-thumb {
-    background-color: #0ae;
+    background-color: rgb(240, 130, 130);
     background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.5, transparent), to(transparent));
 }

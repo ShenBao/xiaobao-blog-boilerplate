@@ -1,7 +1,6 @@
+(function(global, $, doc) {
 
-(function (global, $, doc) {
-
-    var ShenBaoBlogApplication = function () {
+    var ShenBaoBlogApplication = function() {
         this.initialization();
     };
 
@@ -9,7 +8,7 @@
 
         constructor: ShenBaoBlogApplication,
 
-        initialization: function () {
+        initialization: function() {
 
             this.todayLogion();
             this.backTop();
@@ -19,48 +18,38 @@
 
         },
 
-        todayLogion: function () {
+        todayLogion: function() {
             var i = parseInt(Math.random() * logionList.length);
             document.getElementById("today-logion").innerHTML = logionList[i];
         },
 
-        backTop: function () {
-            $('#back-top').hide();
-            $(document).ready(function () {
-                $(window).scroll(function () {
-                    if ($(this).scrollTop() > 250) {
-                        $('#back-top').fadeIn();
-                    } else {
-                        $('#back-top').fadeOut();
-                    }
-                });
-                $('#back-top a').click(function () {
-                    $('body,html').animate({
-                        scrollTop: 0
-                    }, 800);
-                    return false;
-                });
+        backTop: function() {
+            $('#back-top').click(function() {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
             });
         },
 
-        progress: function () {
+        progress: function() {
             var $window = $(window);
             var $progress = $('.progress-indicator');
-            $window.on('scroll', function () {
+            $window.on('scroll', function() {
                 var wh = $window.height();
                 var h = $('body').height();
                 var sHeight = h - wh;
-                window.requestAnimationFrame(function () {
+                window.requestAnimationFrame(function() {
                     var perc = Math.max(0, Math.min(1, $window.scrollTop() / sHeight));
                     updateProgress(perc);
                 });
             });
+
             function updateProgress(perc) {
                 $progress.css({ width: perc * 100 + '%' });
             }
         },
 
-        emojify: function () {
+        emojify: function() {
             emojify.setConfig({
                 emojify_tag_type: 'div',
                 only_crawl_id: null,
@@ -76,24 +65,26 @@
             emojify.run();
         },
 
-        clickHearts: function () {
+        clickHearts: function() {
             var hearts = [];
-            window.requestAnimationFrame = (function () {
+            window.requestAnimationFrame = (function() {
                 return window.requestAnimationFrame ||
                     window.webkitRequestAnimationFrame ||
                     window.mozRequestAnimationFrame ||
                     window.oRequestAnimationFrame ||
                     window.msRequestAnimationFrame ||
-                    function (callback) {
+                    function(callback) {
                         setTimeout(callback, 1000 / 60);
                     }
             })();
             init();
+
             function init() {
                 css(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}");
                 attachEvent();
                 gameloop();
             }
+
             function gameloop() {
                 for (var i = 0; i < hearts.length; i++) {
                     if (hearts[i].alpha <= 0) {
@@ -108,13 +99,15 @@
                 }
                 requestAnimationFrame(gameloop);
             }
+
             function attachEvent() {
                 var old = typeof window.onclick === "function" && window.onclick;
-                window.onclick = function (event) {
+                window.onclick = function(event) {
                     old && old();
                     createHeart(event);
                 }
             }
+
             function createHeart(event) {
                 var d = document.createElement("div");
                 d.className = "heart";
@@ -128,6 +121,7 @@
                 });
                 document.body.appendChild(d);
             }
+
             function css(css) {
                 var style = document.createElement("style");
                 style.type = "text/css";
@@ -138,13 +132,14 @@
                 }
                 document.getElementsByTagName('head')[0].appendChild(style);
             }
+
             function randomColor() {
                 return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + ")";
             }
         }
     };
 
-    $(function () {
+    $(function() {
         global.BlogApplication = new ShenBaoBlogApplication();
     });
 

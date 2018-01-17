@@ -1,12 +1,10 @@
----
-layout: default
----
+--- layout: default ---
 <article class="post">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <span>
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+        <p class="post-meta">
+            <span>
         <a href="https://github.com/ShenBao" target="_blank">
           {% if page.author %}
             {{ page.author }}
@@ -14,67 +12,83 @@ layout: default
             {{ site.site_author }}
           {% endif %}
         </a>
-      </span>
-       ·⊙· 
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+      </span> ·⊙·
+            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {% assign date_format = site.minima.date_format | default: "%B %-d, %Y %H:%M:%S" %}
         {{ page.date | date: date_format }}
       </time>
-    </p>
-    {% if page.tags %}
-    <p class="tags">
-      <a class="link" href="{{ "tags" | relative_url }}" target="_blank">分类：</a>
-        {% for tag in page.tags %}
-        <a class="tag" href="{{ site.baseurl }}/tags#ref-{{ tag }}" title="{{ tag }}">{{ tag }}</a>
-        {% endfor %}
-    </p>
-    {% endif %}
-  </header>
+        </p>
+        {% if page.tags %}
+        <p class="tags">
+            <a class="link" href="{{ " tags " | relative_url }}" target="_blank">分类：</a> {% for tag in page.tags %}
+            <a class="tag" href="{{ site.baseurl }}/tags#ref-{{ tag }}" title="{{ tag }}">{{ tag }}</a> {% endfor %}
+        </p>
+        {% endif %}
+    </header>
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-    
-    <p class="the-end" title="THE END | 全文结束">
-        <b>【 THE END 】</b>
-    </p>
-    
-    <p>
-        ------
-        <a  href="https://github.com/{{site.github_username}}" class="author">
+    <div class="post-content" itemprop="articleBody">
+        {{ content }}
+
+        <p class="the-end" title="THE END | 全文结束">
+            <b>【 THE END 】</b>
+        </p>
+
+        <p>
+            ------
+            <a href="https://github.com/{{site.github_username}}" class="author">
             {% if page.author %}{{ page.author }}{% else %}{{ site.site_author }}{% endif %}
-        </a>
-        on {{ page.date | date: "%B %-d, %Y" }}
-    </p>
+        </a> on {{ page.date | date: "%B %-d, %Y" }}
+        </p>
 
-    <ul class="pager">
-      <li class="previous">
-          {% if page.previous.url %}
-            <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
+        <ul class="pager">
+            <li class="previous">
+                {% if page.previous.url %}
+                <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
             Previous<br>
             <span>{{page.previous.title}}</span>
-            </a>
-            {% endif %}
-        </li>
-        <li class="next">
-            {% if page.next.url %}
-            <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
+            </a> {% endif %}
+            </li>
+            <li class="next">
+                {% if page.next.url %}
+                <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
             Next<br>
             <span>{{page.next.title}}</span>
-            </a>
-            {% endif %}
-        </li>
-    </ul>
+            </a> {% endif %}
+            </li>
+        </ul>
 
-  </div>
+    </div>
 
-  {% include comments.html %}
-  
+    {% include comments.html %}
+
 </article>
 
 <div class="shenbao-toc-tree-catalog">
 
-  <div class="shenbao-toc-tree-content" id="shenbao-toc-tree-content">
-    <ul class="shenbao-toc-tree-body" >
-    </ul>
-  </div>
+    <div class="shenbao-toc-tree-content" id="shenbao-toc-tree-content">
+        <ul class="shenbao-toc-tree-body">
+        </ul>
+    </div>
 </div>
+
+<ul class="tool-bar">
+    <li>
+        <a href="https://github.com/ShenBao{{ site.baseurl}}/blob/master/{{ page.path }}" target="_block">
+            <i class="icon iconfont icon-icon-"></i>
+            <span>编辑</span>
+        </a>
+    </li>
+    <li id="back-top">
+        <i class="icon iconfont icon-fanhuidingbu3"></i>
+        <span>顶部</span>
+    </li>
+</ul>
+
+
+<script>
+    $('#back-top').click(function() {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 800);
+    });
+</script>

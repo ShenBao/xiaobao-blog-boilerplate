@@ -48,4 +48,3 @@ title: "归档"
 	{% endfor%}
     {% assign posts_collate = nil %}
 </div>
-

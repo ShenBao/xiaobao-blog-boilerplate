@@ -1,57 +1,66 @@
-.tool-bar {
-    padding: 0;
-    margin: 0;
+/**
+* 滚动条
+*/
+
+.progress-indicator {
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    height: 3px;
+    z-index: 99;
+    background-color: $mian-hover-color;
+}
+
+.tool-bar {
+    position: fixed;
+    z-index: 1000;
     right: 40px;
     bottom: 50px;
     list-style: none;
+    margin: 0;
     border: 1px solid #DDD;
-    background: rgba(243, 240, 240, 0.99);
+    padding: 0;
     border-radius: 3px;
+    background: rgba(243, 240, 240, 0.99);
     overflow: hidden;
+    li {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+        border-bottom: 1px solid #DDD;
+        &:last-child {
+            border-bottom: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+        i {
+            font-size: 25px !important;
+            color: #333;
+            font-weight: 500;
+        }
+        &:hover i {
+            display: none;
+        }
+        span {
+            display: none;
+            font-size: 10px;
+            color: #0085a1;
+            font-weight: 900;
+        }
+        &:hover span {
+            display: inline;
+        }
+    }
 }
 
 @include media-query($on-palm) {
     .tool-bar {
         right: 20px;
     }
-}
-
-.tool-bar li {
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    text-align: center;
-    cursor: pointer;
-    position: relative;
-    border-bottom: 1px solid #DDD;
-}
-
-.tool-bar li:last-child {
-    border-bottom: 0;
-}
-
-.tool-bar li a {
-    text-decoration: none;
-}
-
-.tool-bar li i {
-    font-size: 25px !important;
-    color: #333;
-    font-weight: 500;
-}
-
-.tool-bar li:hover i {
-    display: none;
-}
-
-.tool-bar li span {
-    display: none;
-    font-size: 10px;
-    color: #0085a1;
-    font-weight: 900;
-}
-
-.tool-bar li:hover span {
-    display: inline;
 }

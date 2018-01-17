@@ -5,7 +5,7 @@
 .post {
     color: $text-color;
     .post-header {
-        margin-bottom: $spacing-unit;
+        margin-bottom: 15px;
         .post-title {
             @include relative-font-size(2.625);
             letter-spacing: -1px;
@@ -42,6 +42,16 @@
                 }
             }
         }
+        .not-catalog {
+            font-size: 10px;
+            line-height: 30px;
+            color: $brand-color;
+        }
+        @include media-query($on-palm) {
+            .not-catalog {
+                display: none;
+            }
+        }
     }
     .post-content {
         margin-bottom: 10px;
@@ -58,24 +68,7 @@
         p {
             line-height: 2.2;
             margin-bottom: 6px;
-        } // h2 {
-        //     @include relative-font-size(2);
-        //     @include media-query($on-laptop) {
-        //         @include relative-font-size(1.75);
-        //     }
-        // }
-        // h3 {
-        //     @include relative-font-size(1.625);
-        //     @include media-query($on-laptop) {
-        //         @include relative-font-size(1.375);
-        //     }
-        // }
-        // h4 {
-        //     @include relative-font-size(1.25);
-        //     @include media-query($on-laptop) {
-        //         @include relative-font-size(1.125);
-        //     }
-        // }
+        }
         h2,
         h3,
         h3 {

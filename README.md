@@ -37,17 +37,29 @@
 
 ## 效果预览
 
-<img src="./img/capture/home.png" width="66%"><br>
+首页
 
-<img src="./img/capture/index.png" width="66%"><br>
+<img src="./img/capture/home.png" width="80%"><br>
 
-<img src="./img/capture/tags.png" width="66%"><br>
+主页
 
-<img src="./img/capture/emoji.png" width="66%"><br>
+<img src="./img/capture/index.png" width="80%"><br>
 
-<img src="./img/capture/toctree.png" width="66%"><br>
+标签
 
-<img src="./img/capture/comments.png" width="66%"><br>
+<img src="./img/capture/tags.png" width="80%"><br>
+
+emoji表情
+
+<img src="./img/capture/emoji.png" width="80%"><br>
+
+文章目录
+
+<img src="./img/capture/toctree.png" width="80%"><br>
+
+评论
+
+<img src="./img/capture/comments.png" width="80%"><br>
 
 
 

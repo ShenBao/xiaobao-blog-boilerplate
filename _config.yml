@@ -10,9 +10,9 @@ email: >-           # Site author email
 
 icon: "/img/config/author-100.png"
 description: >-     # Site description
-  描述
+  小宝的博客 | XiaoBao Blog ,这是小宝的博客模板
 keywords: >-        # Site keywords
-  关键字
+  小宝的博客、XiaoBao Blog
 baseurl: "/xiaobao-blog"   # the subpath of your site, e.g. /blog
 url: ""                           # site, e.g. http://example.com
   
@@ -37,7 +37,7 @@ paginate_path: "page:num"
 markdown: kramdown # kramdown,redcarpet,rdiscount
 kramdown:
 input: GFM                            # use Github Flavored Markdown !important
-highlighter: rouge
+# highlighter: rouge
 #permalink: pretty
 exclude: ["node_modules","package.json","README.md",]
 

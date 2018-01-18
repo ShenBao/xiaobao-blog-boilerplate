@@ -4,9 +4,9 @@
 - <a href="https://shenbao.github.io/xiaobao-blog/home" target="_blank">预览</a>
 - <a href="https://shenbao.github.io/xiaobao-blog/comments" target="_blank">反馈评论</a>
 
-预览二维码地址：
+扫一扫二维码查看效果:
 
-<img src="./img/qrcode.png" width="150">
+<img src="./img/qrcode.png" width="200">
 
 
 ## Features
@@ -33,6 +33,21 @@
 - 文章目录点击滚动至文章对应位置
 - 文章目录的跟随滚动
 - 没有子标题的文章不显示文章目录区域
+
+
+## 效果预览
+
+<img src="./img/capture/home.png" width="66%"><br>
+
+<img src="./img/capture/index.png" width="66%"><br>
+
+<img src="./img/capture/tags.png" width="66%"><br>
+
+<img src="./img/capture/emoji.png" width="66%"><br>
+
+<img src="./img/capture/toctree.png" width="66%"><br>
+
+<img src="./img/capture/comments.png" width="66%"><br>
 
 
 

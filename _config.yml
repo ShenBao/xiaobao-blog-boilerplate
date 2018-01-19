@@ -36,13 +36,17 @@ paginate_path: "page:num"
 
 markdown: kramdown # kramdown,redcarpet,rdiscount
 kramdown:
-input: GFM                            # use Github Flavored Markdown !important
-# highlighter: rouge
-#permalink: pretty
-exclude: ["node_modules","package.json","README.md",]
+  input: GFM                            # use Github Flavored Markdown !important
+  highlighter: rouge
+  syntax_highlighter: rouge
+  highlight: true
+  #permalink: pretty
+  exclude: ["node_modules","package.json","README.md",]
 
-
-gems: [jekyll-paginate]
+# markdown: kramdown
+# kramdown:
+#   input: GFM                            # use Github Flavored Markdown !important
+#   syntax_highlighter: highlight
 
 plugins:
   - jekyll-feed

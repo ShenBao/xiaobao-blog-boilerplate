@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "code highlight"
+title:  "使用highlight.js高亮你的代码"
 date:   2018-01-18 13:20:20 +0800
 categories: 
 tags:
@@ -32,29 +32,99 @@ tags:
 
 ## SCSS
 ```scss
-// Component/index.scss
-.ComponentName {
-    &--mofierName {}
-    &__decendentName {
-        &--modifierName {}
-    }
-    .isStateOfComponent {}
+#main p {
+  color: #00ff00;
+  width: 97%;
+  .redbox {
+    background-color: #ff0000;
+    color: #000000;
+  }
 }
 ```
 
 ## JavaScript 
 ```js
-$('#back-top').click(function() {
-    $('body,html').animate({
-        scrollTop: 0
-    }, 800);
-});
+var str = 'string';
+var num = 88;
+var bool = true;
+var fn = function(){
+    console.log(str);
+}
+function hFn(){
+    alert('test');
+}
 ```
 
-## json
+## JSON
 ```json
 {
   "name": "ShenBao",
   "occupation": "Web App Developer"
+}
+```
+
+
+## XML
+```xml
+<note>
+    <to>George</to>
+    <from>John</from>
+    <heading>Reminder</heading>
+    <body>Don't forget the meeting!</body>
+</note>
+```
+
+## Angular
+```js
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
+})
+export class AppComponent {
+
+  title = 'Angular CNode';
+
+  constructor() {
+
+  }
+}
+```
+## TypeScript
+```js
+let str:string = 'str';
+const tml = `${str}`;
+let isDone: boolean = false;
+let list: number[] = [1, 2, 3];
+
+interface LabelledValue {
+  label: string;
+}
+
+function printLabel(labelledObj: LabelledValue) {
+  console.log(labelledObj.label);
+}
+
+class Greeter {
+    greeting: string;
+    constructor(message: string) {
+        this.greeting = message;
+    }
+    greet() {
+        return "Hello, " + this.greeting;
+    }
+}
+
+let greeter = new Greeter("world");
+```
+
+## java
+```java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
 }
 ```

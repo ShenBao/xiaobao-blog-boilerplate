@@ -22,7 +22,7 @@
 - 注册并添加了hypercomments评论，支持匿名评论,支持国内访问
 
 - 支持markdown文件
-- 代码高亮
+- 集成highlight.js代码高亮
 - 支持Emoji表情(ps:由于原版里对table支持不好，所以改了源码😭)
 - 添加顶部阅读进度条
 - 添加返回顶部

@@ -33,7 +33,7 @@ $(function() {
 
         creatTocTree: function() {
             var $tocTree = $('.shenbao-toc-tree-hx');
-            if ($tocTree.length == 0) {
+            if ($tocTree.length == 0 || $('.shenbao-toc-tree-catalog').length == 0) {
                 $('.shenbao-toc-tree-catalog').hide();
                 return;
             }

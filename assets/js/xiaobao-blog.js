@@ -141,6 +141,7 @@
 
     $(function() {
         global.BlogApplication = new ShenBaoBlogApplication();
+        hljs.initHighlightingOnLoad();
     });
 
 })(this, this.$, document);

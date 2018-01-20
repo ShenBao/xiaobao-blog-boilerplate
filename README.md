@@ -54,6 +54,10 @@ emoji表情
 
 <img src="./img/capture/emoji.png" width="80%"><br>
 
+代码高亮并显示行号
+
+<img src="./img/capture/highlight.png" width="80%"><br>
+
 文章目录
 
 <img src="./img/capture/toctree.png" width="80%"><br>

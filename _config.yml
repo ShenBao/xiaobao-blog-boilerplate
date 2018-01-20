@@ -20,8 +20,7 @@ site_url: https://shenbao.github.io
 site_author:  ShenBao
 creat_time: 2018
 
-
-# twitter_username: jekyllrb
+# twitter_username: 
 weibo_username:  ShenBaoPro
 zhihu_username:  shenbao
 github_username:  ShenBao
@@ -30,9 +29,8 @@ cnode_username:  ShenBao
 disqus_username: ShenBao
 hypercomments_userid: 91931
 
-paginate: 2
+paginate: 5
 paginate_path: "page:num"
-
 
 markdown: kramdown # kramdown,redcarpet,rdiscount
 kramdown:
@@ -43,23 +41,6 @@ kramdown:
   #permalink: pretty
   exclude: ["node_modules","package.json","README.md",]
 
-# markdown: kramdown
-# kramdown:
-#   input: GFM                            # use Github Flavored Markdown !important
-#   syntax_highlighter: highlight
-
 plugins:
   - jekyll-feed
   - jekyll-paginate
-
-
-
-
-
-
-
-
-
-
-
-

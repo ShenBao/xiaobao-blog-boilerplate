@@ -19,7 +19,7 @@ $(function() {
         },
 
         queryTocTree: function() {
-            var hxArray = $('.post-content h' + hx);
+            var hxArray = $('.post-content > h' + hx);
             for (var i = 0; i < hxArray.length; i++) {
                 hxArray.eq(i).addClass('shenbao-toc-tree-hx');
             }

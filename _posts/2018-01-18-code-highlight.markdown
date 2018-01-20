@@ -122,9 +122,33 @@ let greeter = new Greeter("world");
 
 ## java
 ```java
+/**
+*   java HelloWorld
+*/
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello World");
     }
 }
+```
+
+## ruby
+```ruby
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+```
+
+## bash
+```bash
+#!/bin/sh
+sed 's/abc/cba/' 
+curl
+#!/bin/bash  
+echo "Hello World !" 
+chmod +x ./test.sh  #使脚本具有执行权限  
+./test.sh  #执行脚本  
+/bin/sh test.sh
 ```

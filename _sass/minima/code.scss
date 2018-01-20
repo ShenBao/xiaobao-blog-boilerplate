@@ -14,6 +14,10 @@ code {
     padding: 1px 5px;
 }
 
+code.highlighter-rouge {
+    color: red;
+}
+
 pre {
     padding: 8px 12px;
     overflow-x: auto;
@@ -21,5 +25,47 @@ pre {
         border: 0;
         padding-right: 0;
         padding-left: 0;
+    }
+}
+
+pre {
+    position: relative;
+    margin-bottom: 24px;
+    border-radius: 3px;
+    border: 1px solid #C3CCD0;
+    background: #FFF;
+    overflow: hidden;
+    padding: 10px 12px !important;
+    code {
+        display: block;
+        padding: 12px 24px;
+        overflow-y: auto;
+        font-weight: 300;
+        font-family: Menlo, monospace;
+        line-height: 24px !important;
+    }
+    code.has-numbering {
+        margin-left: 25px;
+        padding: 0 !important;
+    }
+}
+
+.pre-numbering {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    padding: 10px 2px 18px 0;
+    border-right: 1px solid #C3CCD0;
+    border-radius: 3px 0 0 3px;
+    background-color: #EEE;
+    text-align: right;
+    font-family: Menlo, monospace;
+    font-size: 0.8em;
+    color: #AAA;
+    margin: 0 !important;
+    li {
+        line-height: 24px !important;
     }
 }

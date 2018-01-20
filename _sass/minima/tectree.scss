@@ -75,6 +75,7 @@
 }
 
 #shenbao-toc-tree-content::-webkit-scrollbar-thumb {
-    background-color: rgb(240, 130, 130);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.5, transparent), to(transparent));
+    // background-color: rgb(240, 130, 130);
+    // background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.5, transparent), to(transparent));
+    background-color: rgb(211, 211, 211);
 }

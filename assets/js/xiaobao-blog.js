@@ -15,6 +15,7 @@
             this.progress();
             this.emojify();
             this.clickHearts();
+            this.Highlight();
 
         },
 
@@ -136,12 +137,28 @@
             function randomColor() {
                 return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + ")";
             }
+        },
+
+        Highlight: function() {
+            // init
+            hljs.initHighlightingOnLoad();
+            // 添加行号
+            $('pre code').each(function() {
+                var lines = $(this).text().split('\n').length - 1;
+                var $numbering = $('<ul/>').addClass('pre-numbering');
+                $(this)
+                    .addClass('has-numbering')
+                    .parent()
+                    .append($numbering);
+                for (i = 1; i <= lines; i++) {
+                    $numbering.append($('<li/>').text(i));
+                }
+            });
         }
     };
 
     $(function() {
         global.BlogApplication = new ShenBaoBlogApplication();
-        hljs.initHighlightingOnLoad();
     });
 
 })(this, this.$, document);

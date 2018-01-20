@@ -23,6 +23,7 @@
 
 - 支持markdown文件
 - 集成highlight.js代码高亮
+- code区域显示行号
 - 支持Emoji表情(ps:由于原版里对table支持不好，所以改了源码😭)
 - 添加顶部阅读进度条
 - 添加返回顶部

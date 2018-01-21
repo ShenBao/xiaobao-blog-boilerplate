@@ -15,10 +15,12 @@ keywords: >-        # Site keywords
   小宝的博客、XiaoBao Blog
 baseurl: "/xiaobao-blog"   # the subpath of your site, e.g. /blog
 url: ""                           # site, e.g. http://example.com
-  
+
 site_url: https://shenbao.github.io
 site_author:  ShenBao
 creat_time: 2018
+sidebar: true
+
 
 # twitter_username: 
 weibo_username:  ShenBaoPro

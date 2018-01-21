@@ -1,0 +1,16 @@
+<section>
+    <h5>
+        <a href="{{'/tags/' | prepend: site.baseurl }}">FEATURED TAGS</a>
+    </h5>
+    <div id='tag_cloud' class="tags">
+        {% for tag in site.tags %}
+        <a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Short About -->
+<section class="visible-md visible-lg">
+    <h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
+</section>
+    

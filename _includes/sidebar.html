@@ -1,16 +1,38 @@
-<section>
-    <h5>
-        <a href="{{'/tags/' | prepend: site.baseurl }}">FEATURED TAGS</a>
-    </h5>
-    <div id='tag_cloud' class="tags">
-        {% for tag in site.tags %}
-        <a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
-        {% endfor %}
-    </div>
-</section>
-
-<!-- Short About -->
-<section class="visible-md visible-lg">
-    <h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
-</section>
+<div class="sidebar">
     
+    <section class="tags">
+        <hr>
+        <h5>
+            <a href="{{'/tags/' | prepend: site.baseurl }}">FEATURED TAGS</a>
+        </h5>
+        <div>
+            {% for tag in site.tags %}
+            <a href="{{ site.baseurl }}/tags/#ref-{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section class="about">
+        <hr>
+        <h5>
+            <a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a>
+        </h5>
+        <img src="{{ site.icon || prepend: site.baseurl}}">
+        <p>
+            {{ site.sidebar-about-description }}
+        </p>
+    </section>
+
+    <section class="link">
+        <hr>
+        <h5>
+            LINK
+        </h5>
+        <div>
+            {% for item in site.data.sidebarLink %}
+                <a href="{{ item.path }}" target="_blank">{{ item.title }}</a>
+            {% endfor %}
+        </div>
+    </section>
+
+</div>

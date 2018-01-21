@@ -1,8 +1,8 @@
 /**
-* 滚动条
+* toolbar
 */
 
-.progress-indicator {
+.site-progress-indicator {
     position: fixed;
     top: 0;
     left: 0;
@@ -13,7 +13,7 @@
     background-color: $mian-hover-color;
 }
 
-.tool-bar {
+.site-tool-bar {
     position: fixed;
     z-index: 1000;
     right: 40px;
@@ -60,7 +60,7 @@
 }
 
 @include media-query($on-palm) {
-    .tool-bar {
+    .site-tool-bar {
         right: 20px;
     }
 }

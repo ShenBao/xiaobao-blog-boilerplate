@@ -9,7 +9,7 @@ title: "自定义列表内容"
     {% assign groupIndex = 0 %}
     {% for group in site.data.custom.list  %}
         {% assign groupIndex = groupIndex | plus: 1 %}
-        <div class="post-content">
+        <div class="site-page-list">
             <legend>
                 <b>{{ group.title }}</b>
             </legend>

@@ -1,29 +1,20 @@
 /**
- * post-list
+ * page-list
  */
 
-.post-list {
-    a:hover {
-        color: $mian-hover-color;
-    }
-}
-
-.post-content {
+.site-page-list {
     legend {
         color: $main-color;
         width: 100%;
         padding: 0;
+        padding-bottom: 3px;
         margin-top: 5px;
         margin-bottom: 10px;
         font-size: 21px;
         line-height: inherit;
         border: 0;
         border-bottom: 1px solid $main-background-color-one;
-    }
-    .post-list {
-        li {
-            padding: .3rem 0rem;
-        }
+        border-bottom: 1px solid rgba(230, 230, 230, 0.99);
     }
     .list {
         list-style: none;

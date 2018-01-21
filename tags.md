@@ -1,9 +1,10 @@
 ---
 layout: page
 title: "标签"
+is-show-sidebar: false
 ---
 
-<div class="tags">
+<div class="site-tags">
 
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign tag_words = site_tags | split:',' | sort %}
@@ -26,11 +27,11 @@ title: "标签"
 
 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
-  <div class="post-content">
+  <div class="site-page-list">
       <legend id="ref-{{ this_word | replace:' ','-' }}">
           <b>{{ this_word }}</b>
       </legend>
-      <ul class="post-list">
+      <ul class="list">
           {% for post in site.tags[this_word] %}{% if post.title != null %}
           <li>
               <span>{{ post.date | date: "%F" }}</span>

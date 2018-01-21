@@ -3,23 +3,24 @@
 
 site_title: >-      # Site title
   小宝的博客 | XiaoBao Blog
-
 title: XiaoBao Blog    # Site nav title
-email: >-           # Site author email
-  shenbaoone@gmail.com
-
-icon: "/img/config/author-100.png"
 description: >-     # Site description
   小宝的博客 | XiaoBao Blog ,这是小宝的博客模板
 keywords: >-        # Site keywords
   小宝的博客、XiaoBao Blog
-baseurl: "/xiaobao-blog"   # the subpath of your site, e.g. /blog
-url: ""                           # site, e.g. http://example.com
+
 
 site_url: https://shenbao.github.io
+baseurl: "/xiaobao-blog"   # the subpath of your site, e.g. /blog
+url: ""                           # site, e.g. http://example.com
 site_author:  ShenBao
+email: >-           # Site author email
+  shenbaoone@gmail.com
 creat_time: 2018
-sidebar: true
+
+
+icon: "/img/config/author-100.png"
+sidebar-about-description: "少抱怨,多思考,未来更美好!"
 
 
 # twitter_username: 
@@ -34,6 +35,7 @@ hypercomments_userid: 91931
 paginate: 5
 paginate_path: "page:num"
 
+
 markdown: kramdown # kramdown,redcarpet,rdiscount
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
@@ -42,6 +44,7 @@ kramdown:
   highlight: true
   #permalink: pretty
   exclude: ["node_modules","package.json","README.md",]
+
 
 plugins:
   - jekyll-feed

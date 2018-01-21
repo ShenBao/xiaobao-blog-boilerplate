@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "About Me"
+is-show-sidebar: false
 ---
 
 <blockquote>

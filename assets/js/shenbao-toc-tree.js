@@ -1,11 +1,11 @@
-$(function() {
+$(function () {
 
     var hx = 2;
     var maxHx = 4;
     var $mark = 1;
 
     var ShenBaoTocTree = {
-        isMobile: function() {
+        isMobile: function () {
             var ua = navigator.userAgent;
             var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
                 isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
@@ -18,7 +18,7 @@ $(function() {
             }
         },
 
-        queryTocTree: function() {
+        queryTocTree: function () {
             var hxArray = $('.post-content > h' + hx);
             for (var i = 0; i < hxArray.length; i++) {
                 hxArray.eq(i).addClass('shenbao-toc-tree-hx');
@@ -31,7 +31,7 @@ $(function() {
             }
         },
 
-        creatTocTree: function() {
+        creatTocTree: function () {
             var $tocTree = $('.shenbao-toc-tree-hx');
             if ($tocTree.length == 0 || $('.shenbao-toc-tree-catalog').length == 0) {
                 $('.shenbao-toc-tree-catalog').hide();
@@ -56,30 +56,33 @@ $(function() {
                 $tocTreeHTML += $item;
             }
             $('.shenbao-toc-tree-body').html($tocTreeHTML);
-            setTimeout(this.scrollFn, 100);
+            setTimeout(this.scrollFn, 20);
+            setTimeout(function () {
+                $('body,html').animate({ 'scrollTop': $(window).scrollTop() + 2 }, 300);
+            }, 500);
             this.liClick();
         },
 
-        liClick: function() {
+        liClick: function () {
             //鼠标点击
-            $('.shenbao-toc-tree-body li').click(function() {
+            $('.shenbao-toc-tree-body li').click(function () {
                 $mark = 0;
                 var $index = $(this).index();
                 $('.shenbao-toc-tree-body li').removeClass('active');
                 $(this).addClass('active');
                 var $top = $('.shenbao-toc-tree-hx').eq($index).offset().top + 5;
-                $('body,html').animate({ 'scrollTop': $top }, 300, function() {
+                $('body,html').animate({ 'scrollTop': $top }, 300, function () {
                     $mark = 1;
                 });
             })
         },
 
-        scrollFn: function() {
-            $(window).scroll(function() {
+        scrollFn: function () {
+            $(window).scroll(function () {
                 var $scrolltop = $(window).scrollTop();
                 if ($mark == 1) {
 
-                    $('.shenbao-toc-tree-hx').each(function() {
+                    $('.shenbao-toc-tree-hx').each(function () {
                         var $index = $(this).index('.shenbao-toc-tree-hx');
                         if ($index >= $('.shenbao-toc-tree-hx').length - 1) {
                             $divTop = $('.the-end').offset().top;

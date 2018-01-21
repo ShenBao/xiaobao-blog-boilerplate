@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "标签"
+is-show-edit: false
 is-show-sidebar: false
 ---
 
@@ -15,7 +16,7 @@ is-show-sidebar: false
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
     <li>
-        <a href="#ref-{{ this_word | replace:' ','-' }}" data-toggle="tab">
+        <a href="#{{ this_word | replace:' ','-' }}" data-toggle="tab" title="{{ this_word }}">
           {{ this_word }}
         </a>
         <span>{{ site.tags[this_word].size }}</span>
@@ -28,7 +29,7 @@ is-show-sidebar: false
 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
   <div class="site-page-list">
-      <legend id="ref-{{ this_word | replace:' ','-' }}">
+      <legend id="{{ this_word | replace:' ','-' }}">
           <b>{{ this_word }}</b>
       </legend>
       <ul class="list">
@@ -37,6 +38,7 @@ is-show-sidebar: false
               <span>{{ post.date | date: "%F" }}</span>
             <b class='raqu'> &raquo; </b> 
             <a href="{{ post.url | relative_url }}"
+                title="{{ post.title }}"
                 >
                 {{ post.title }}
             </a>

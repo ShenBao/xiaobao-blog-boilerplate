@@ -25,7 +25,7 @@ layout: default
         {% if page.tags %}
             <p class="tags">
                 <a class="link" href="{{ " tags " | relative_url }}" target="_blank">分类：</a> {% for tag in page.tags %}
-                <a class="tag" href="{{ site.baseurl }}/tags#ref-{{ tag }}" title="{{ tag }}">{{ tag }}</a> {% endfor %}
+                <a class="tag" href="{{ site.baseurl }}/tags#{{ tag }}" title="{{ tag }}">{{ tag }}</a> {% endfor %}
             </p>
         {% endif %}
 

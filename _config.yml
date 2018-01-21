@@ -8,6 +8,7 @@ description: >-     # Site description
   小宝的博客 | XiaoBao Blog ,这是小宝的博客模板
 keywords: >-        # Site keywords
   小宝的博客、XiaoBao Blog
+icon: "/img/config/author-100.png"
 
 
 site_url: https://shenbao.github.io
@@ -18,8 +19,7 @@ email: >-           # Site author email
   shenbaoone@gmail.com
 creat_time: 2018
 
-
-icon: "/img/config/author-100.png"
+sidebar-about-icon: "/img/config/programmer.jpg"
 sidebar-about-description: "少抱怨,多思考,未来更美好!"
 
 

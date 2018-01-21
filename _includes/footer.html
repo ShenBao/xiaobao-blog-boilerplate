@@ -1,10 +1,12 @@
 <div class="site-contact-info">
     <div class="wrapper contact-info-content">
         <div>
-            <a class="about" href="{{ site.data.contactInfo.about.path | relative_url }}">
+            <a class="about" href="{{ site.data.contactInfo.about.path | relative_url }}"
+                title="{{ site.data.contactInfo.about.title }}">
                 {{ site.data.contactInfo.about.title }}
             </a>
-            <a class="comment" href="{{ site.data.contactInfo.comments.path | relative_url }}">
+            <a class="comment" href="{{ site.data.contactInfo.comments.path | relative_url }}"
+                title="{{ site.data.contactInfo.comments.title }}">
                 {{ site.data.contactInfo.comments.title }}
             </a>
         </div>
@@ -15,7 +17,7 @@
                 <dl>
                     <dt>{{ group.title }}</dt> {% for item in group.list %}
                     <dd>
-                        <a href="{{ item.path }}" target="_blank">{{ item.title }}</a>
+                        <a href="{{ item.path }}" target="_blank" title="{{ item.title }}">{{ item.title }}</a>
                     </dd>
                     {% endfor %}
                 </dl>

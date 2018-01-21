@@ -18,6 +18,11 @@ code.highlighter-rouge {
     color: red;
 }
 
+div.highlighter-rouge,
+blockquote {
+    margin: 8px 0;
+}
+
 pre {
     padding: 8px 12px;
     overflow-x: auto;

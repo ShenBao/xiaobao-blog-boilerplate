@@ -3,6 +3,7 @@
 */
 
 .site-sidebar {
+    margin-bottom: 80px;
     .sidebar {
         hr {
             border: 0;
@@ -54,9 +55,10 @@
                 display: block;
                 width: 150px;
                 max-width: 160px;
+                margin-left: 10px;
             }
             p {
-                margin: 15px 0 15px 5px;
+                margin: 10px;
                 ;
                 color: #bfbfbf;
                 font-size: 14px;

@@ -1,13 +1,13 @@
 ---
 layout: page
 title: "About Me"
+is-show-edit: false
 is-show-sidebar: false
 ---
 
-<blockquote>
-    <p>不管路走了多远<br>
-    错了就要重新返回</p>
-</blockquote>
+> 不管路走了多远
+>
+> 错了就要重新返回
 
 ```json
 {

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "归档"
+is-show-edit: false
 ---
 
 <!-- 这里获取的是_posts文件夹里的 -->
@@ -25,6 +26,7 @@ title: "归档"
             <span>{{ post.date | date: "%F" }}</span>
             <b class='raqu'> &raquo; </b> 
             <a href="{{ post.url | relative_url }}"
+                title="{{ post.title }}"
                 >
                 {{ post.title }}
             </a>

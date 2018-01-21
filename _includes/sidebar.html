@@ -3,11 +3,11 @@
     <section class="tags">
         <hr>
         <h5>
-            <a href="{{'/tags/' | prepend: site.baseurl }}">FEATURED TAGS</a>
+            <a href="{{'/tags/' | prepend: site.baseurl }}" title="tags">FEATURED TAGS</a>
         </h5>
         <div>
             {% for tag in site.tags %}
-            <a href="{{ site.baseurl }}/tags/#ref-{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+            <a href="{{ site.baseurl }}/tags#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
             {% endfor %}
         </div>
     </section>
@@ -15,9 +15,9 @@
     <section class="about">
         <hr>
         <h5>
-            <a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a>
+            <a href="{{'/about/' | prepend: site.baseurl }}" title="about">ABOUT ME</a>
         </h5>
-        <img src="{{ site.icon || prepend: site.baseurl}}">
+        <img src="{{ site.sidebar-about-icon || prepend: site.baseurl}}">
         <p>
             {{ site.sidebar-about-description }}
         </p>
@@ -30,7 +30,7 @@
         </h5>
         <div>
             {% for item in site.data.sidebarLink %}
-                <a href="{{ item.path }}" target="_blank">{{ item.title }}</a>
+                <a href="{{ item.path }}" target="_blank" title="{{ item.title }}">{{ item.title }}</a>
             {% endfor %}
         </div>
     </section>

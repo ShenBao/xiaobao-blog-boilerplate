@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "主页"
+is-show-edit: false
 ---
 
 

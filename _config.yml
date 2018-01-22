@@ -1,7 +1,7 @@
 # Welcome to Jekyll!
 # Site settings
 
-site_title: >-      # Site title
+seo_title: >-      # Site title
   小宝的博客 | XiaoBao Blog
 title: XiaoBao Blog    # Site nav title
 description: >-     # Site description

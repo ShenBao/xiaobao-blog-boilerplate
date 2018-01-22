@@ -3,8 +3,10 @@
  */
 
 .home {
-    padding-top: 50px;
-    padding-bottom: 70px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    width: 100%;
     h3 {
         /* text-align: center; */
         font-size: 30px;

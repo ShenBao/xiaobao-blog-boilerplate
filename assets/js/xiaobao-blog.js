@@ -25,10 +25,26 @@
         },
 
         backTop: function() {
-            $('#back-top').click(function() {
-                $('body,html').animate({
-                    scrollTop: 0
-                }, 800);
+            // $('#back-top').click(function() {
+            //     $('body,html').animate({
+            //         scrollTop: 0
+            //     }, 800);
+            // });
+            $('#site-back-top').hide();
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 250) {
+                        $('#site-back-top').fadeIn();
+                    } else {
+                        $('#site-back-top').fadeOut();
+                    }
+                });
+                $('#site-back-top').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 800);
+                    return false;
+                });
             });
         },
 

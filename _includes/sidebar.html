@@ -1,5 +1,5 @@
 <div class="sidebar">
-    
+
     <section class="tags">
         <hr>
         <h5>
@@ -21,6 +21,28 @@
         <p>
             {{ site.sidebar-about-description }}
         </p>
+        <ul>
+            <li>
+                <a href="https://www.zhihu.com/people/shenbao/posts" target="_block" title="知乎">
+                    <i class="icon iconfont icon-zhihu0"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://weibo.com/ShenBaoPro" target="_block" title="微博">
+                    <i class="icon iconfont icon-weibo1"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://cnodejs.org/user/ShenBao" target="_block" title="CNode">
+                    <i class="icon iconfont icon-nodejs"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/ShenBao" target="_block" title="GitHub">
+                    <i class="icon iconfont icon-github"></i>
+                </a>
+            </li>
+        </ul>
     </section>
 
     <section class="link">
@@ -30,7 +52,7 @@
         </h5>
         <div>
             {% for item in site.data.sidebarLink %}
-                <a href="{{ item.path }}" target="_blank" title="{{ item.title }}">{{ item.title }}</a>
+            <a href="{{ item.path }}" target="_blank" title="{{ item.title }}">{{ item.title }}</a>
             {% endfor %}
         </div>
     </section>

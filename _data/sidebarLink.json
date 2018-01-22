@@ -1,11 +1,15 @@
 [
     {
         "path": "https://shenbao.github.io",
-        "title": "Blog"
+        "title": "ShenBao Blog"
+    },
+    {
+        "path": "https://shenbao.github.io/xiaobao-blog",
+        "title": "Blog Boilerplate"
     },
     {
         "path": "https://shenbao.github.io/shenbao-learn-notes",
-        "title": "Notes"
+        "title": "ShenBao Notes"
     },
     {
         "path": "https://shenbao.github.io/angular-cnode",

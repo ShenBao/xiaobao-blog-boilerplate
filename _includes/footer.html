@@ -1,12 +1,10 @@
 <div class="site-contact-info">
     <div class="wrapper contact-info-content">
         <div>
-            <a class="about" href="{{ site.data.contactInfo.about.path | relative_url }}"
-                title="{{ site.data.contactInfo.about.title }}">
+            <a class="about" href="{{ site.data.contactInfo.about.path | relative_url }}" title="{{ site.data.contactInfo.about.title }}">
                 {{ site.data.contactInfo.about.title }}
             </a>
-            <a class="comment" href="{{ site.data.contactInfo.comments.path | relative_url }}"
-                title="{{ site.data.contactInfo.comments.title }}">
+            <a class="comment" href="{{ site.data.contactInfo.comments.path | relative_url }}" title="{{ site.data.contactInfo.comments.title }}">
                 {{ site.data.contactInfo.comments.title }}
             </a>
         </div>
@@ -69,3 +67,5 @@
 <script src="{{ "/assets/js/highlight.pack.js" | relative_url }}"></script>
 <script src="{{ "/assets/js/xiaobao-blog.js" | relative_url }}"></script>
 <script src="{{ "/assets/js/shenbao-toc-tree.js" | relative_url }}"></script>
+
+<!-- <script src="{{ "/dist/app.js " | relative_url }}"></script> -->

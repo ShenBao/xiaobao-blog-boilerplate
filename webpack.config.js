@@ -2,13 +2,17 @@ const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
-const extractSass = new ExtractTextPlugin({filename: "app.css"});
+const extractSass = new ExtractTextPlugin(
+    {
+        filename: "shenbao-blog-app.css"
+    }
+);
 
 module.exports = {
-    entry: './src1/app.js',
+    entry: './src/shenbao-blog-app.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'app.js'
+        filename: 'shenbao-blog-app.js'
     },
 
     devtool: "source-map",
@@ -33,7 +37,7 @@ module.exports = {
                         {
                             loader: 'css-loader',
                             options: {
-                                // sourceMap: true,
+                                sourceMap: true,
                                 minimize: true
                             }
                         }
@@ -71,13 +75,6 @@ module.exports = {
                             name: '[name].[hash:10].[ext]',
                             limit: 10240
                         }
-                    },
-                    {
-                        loader: 'url-loader',
-                        options: {
-                            name: '[name].[hash:10].[ext]',
-                            limit: 10240
-                        }
                     }
                 ]
             }, {
@@ -89,13 +86,6 @@ module.exports = {
                             name: '[name].[hash:10].[ext]',
                             limit: 10240
                         }
-                    },
-                    {
-                        loader: 'url-loader',
-                        options: {
-                            name: '[name].[hash:10].[ext]',
-                            limit: 10240
-                        }
                     }
                 ]
             }
@@ -103,6 +93,11 @@ module.exports = {
     },
     plugins: [
         extractSass,
-        new UglifyJsPlugin()
+        new UglifyJsPlugin({
+            sourceMap: true,
+            uglifyOptions: {
+                ie8: true,
+            }
+        })
     ]
 };

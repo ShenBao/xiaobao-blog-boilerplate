@@ -5,9 +5,10 @@
     "main": "index.js",
     "scripts": {
         "clean": "rm -rf dist/*",
+        "clean:ps": "Remove-Item ./dist/*",
+        "build": "webpack --progress",
         "start": "jekyll serve --port 8888",
         "dev": "jekyll serve --port 8888 --host 192.168.1.6",
-        "build": "npm run clean && webpack --progress",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "",

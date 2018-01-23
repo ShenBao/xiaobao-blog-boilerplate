@@ -38,12 +38,12 @@ paginate_path: "page:num"
 
 markdown: kramdown # kramdown,redcarpet,rdiscount
 kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
-  highlighter: rouge
-  syntax_highlighter: rouge
-  highlight: true
-  #permalink: pretty
-  exclude: ["node_modules","package.json","README.md",]
+input: GFM                            # use Github Flavored Markdown !important
+highlighter: rouge
+syntax_highlighter: rouge
+highlight: true
+#permalink: pretty
+exclude: ["README.md","node_modules","package.json","package-lock.json","webpack.config.js","src","LICENSE.txt"]
 
 
 plugins:

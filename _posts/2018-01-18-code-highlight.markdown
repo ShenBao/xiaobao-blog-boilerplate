@@ -6,6 +6,7 @@ categories:
 tags:
     - Jekyll
     - highlight
+    - code
 ---
 
 ## HTML

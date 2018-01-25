@@ -15,7 +15,7 @@ module.exports = {
         filename: 'shenbao-blog-app.js'
     },
 
-    devtool: "source-map",
+    devtool: "hidden-source-map",
     resolve: {
         extensions: [
             '.js',

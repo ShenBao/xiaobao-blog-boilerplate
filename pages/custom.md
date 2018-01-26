@@ -4,7 +4,7 @@ title: "自定义列表内容"
 is-show-edit: false
 ---
 
-<!-- 这里获取的是_data文件夹里的custom.json文件，需要在custom.json配置相关参数 -->
+> 这里获取的是_data文件夹里的custom.json文件，需要在custom.json配置
 
 <div>
     {% assign groupIndex = 0 %}

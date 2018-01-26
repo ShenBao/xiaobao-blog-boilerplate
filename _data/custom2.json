@@ -1,0 +1,53 @@
+[
+    {
+        "title": "大标题1",
+        "basePath": "/md/custom/",
+        "list": [
+            {
+                "title": "基础",
+                "list": [
+                    {
+                        "path": "test",
+                        "title": "第1篇文章"
+                    },
+                    {
+                        "path": "test",
+                        "title": "第2篇文章"
+                    }
+                ]
+            },
+            {
+                "title": "进阶",
+                "list": [
+                    {
+                        "path": "test",
+                        "title": "第1篇文章"
+                    },
+                    {
+                        "path": "test",
+                        "title": "第2篇文章"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "大标题2",
+        "basePath": "/md/custom2/",
+        "list": [
+            {
+                "title": "高级",
+                "list": [
+                    {
+                        "path": "test2",
+                        "title": "第1篇文章"
+                    },
+                    {
+                        "path": "test2",
+                        "title": "第2篇文章"
+                    }
+                ]
+            }
+        ]
+    }
+]

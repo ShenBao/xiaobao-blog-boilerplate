@@ -11,12 +11,11 @@ is-show-sidebar: false
 {% assign tag_words = site_tags | split:',' | sort %}
 
 <!-- 导航 -->
-
 <ul class="nav">
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
     <li>
-        <a href="#{{ this_word | replace:' ','-' }}" data-toggle="tab" title="{{ this_word }}">
+        <a href="#{{ this_word | replace:' ','-' }}" title="{{ this_word }}">
           {{ this_word }}
         </a>
         <span>{{ site.tags[this_word].size }}</span>
@@ -25,7 +24,6 @@ is-show-sidebar: false
 </ul>
 
 <!-- 列表 -->
-
 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
   <div class="site-page-list">
@@ -47,5 +45,4 @@ is-show-sidebar: false
       </ul>
   </div>
 {% endunless %}{% endfor %}
-
 </div>

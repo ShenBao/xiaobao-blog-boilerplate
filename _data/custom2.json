@@ -26,6 +26,10 @@
                     {
                         "path": "test",
                         "title": "第2篇文章"
+                    },
+                    {
+                        "path": "test",
+                        "title": "第3篇文章"
                     }
                 ]
             }
@@ -45,6 +49,10 @@
                     {
                         "path": "test2",
                         "title": "第2篇文章"
+                    },
+                    {
+                        "path": "test2",
+                        "title": "第3篇文章"
                     }
                 ]
             }

@@ -14,9 +14,18 @@
   </main>
 
   {% include tollbar.html %}
-
-  {% include footer.html %}
-
+  
+  {% if jekyll.environment == "production" %}
+    {% include footer.html %}
+  {% else %}
+    <footer class="site-footer">
+        <div class="copyright-content">
+            <p>版权声明: 本作品所有代码和文章都可以随意转发，请保留作者署名及原文链接
+            </p>
+        </div>
+    </footer>
+    <script src="{{ "/dist/shenbao-blog-app.js " | relative_url }}"></script>
+  {% endif %}
 </body>
 
 </html>

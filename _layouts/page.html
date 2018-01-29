@@ -6,7 +6,7 @@ layout: default
 
     <div class="page-main
     
-      {% if page.is-show-sidebar == false %}
+      {% if site.sidebar-is-show != true or page.is-show-sidebar == false %}
         not-sidebar">
       {% else %}
         ">
@@ -25,7 +25,7 @@ layout: default
       </div>
     </div>
     
-    {% if page.is-show-sidebar == false %}
+    {% if site.sidebar-is-show != true or page.is-show-sidebar == false %}
       <span></span>
     {% else %}
       <div class="site-sidebar">

@@ -10,6 +10,7 @@
         "build": "webpack --progress",
         "profile": "webpack --profile --json > stats/stats.json",
         "start": "jekyll serve --port 8888",
+        "prod": "JEKYLL_ENV=production jekyll serve",
         "dev": "jekyll serve --port 8888 --host 192.168.1.6",
         "test": "echo \"Error: no test specified\" && exit 1"
     },

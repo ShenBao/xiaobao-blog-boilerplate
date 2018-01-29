@@ -16,10 +16,6 @@
         "title": "自定义"
     },
     {
-        "path": "pages/custom2",
-        "title": "自定义2"
-    },
-    {
         "path": "about",
         "title": "关于我"
     }

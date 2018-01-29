@@ -4,12 +4,10 @@
     "description": "*Minima is a one-size-fits-all Jekyll theme for writers*. It's Jekyll's default (and first) theme. It's what you get when you run `jekyll new`.",
     "main": "index.js",
     "scripts": {
-
         "clean": "rm -rf dist/* && rm -rf _site/*",
         "clean:ps": "Remove-Item ./dist/*",
         "watch": "webpack --watch",
         "build": "webpack --progress",
-
         "start": "jekyll serve --port 8888",
         "dev": "jekyll serve --port 8888 --host 192.168.1.6",
         "test": "echo \"Error: no test specified\" && exit 1"

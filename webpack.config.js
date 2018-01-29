@@ -1,6 +1,8 @@
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const ModuleConcatenationPlugin = require('webpack/lib/optimize/ModuleConcatenationPlugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const extractSass = new ExtractTextPlugin(
     {
@@ -93,11 +95,13 @@ module.exports = {
     },
     plugins: [
         extractSass,
+        new ModuleConcatenationPlugin(),
         new UglifyJsPlugin({
             sourceMap: true,
             uglifyOptions: {
                 ie8: true,
             }
-        })
+        }),
+        // new BundleAnalyzerPlugin(),
     ]
 };

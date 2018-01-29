@@ -8,6 +8,7 @@
         "clean:ps": "Remove-Item ./dist/*",
         "watch": "webpack --watch",
         "build": "webpack --progress",
+        "profile": "webpack --profile --json > stats/stats.json",
         "start": "jekyll serve --port 8888",
         "dev": "jekyll serve --port 8888 --host 192.168.1.6",
         "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,15 +20,16 @@
         "normalize.css": "^7.0.0"
     },
     "devDependencies": {
-        "webpack": "^3.10.0",
         "css-loader": "^0.28.9",
+        "extract-text-webpack-plugin": "^3.0.2",
         "file-loader": "^1.1.6",
         "json-loader": "^0.5.7",
         "node-sass": "^4.7.2",
         "sass-loader": "^6.0.6",
         "style-loader": "^0.19.1",
-        "url-loader": "^0.6.2",
         "uglifyjs-webpack-plugin": "^1.1.6",
-        "extract-text-webpack-plugin": "^3.0.2"
+        "url-loader": "^0.6.2",
+        "webpack": "^3.10.0",
+        "webpack-bundle-analyzer": "^2.9.2"
     }
 }

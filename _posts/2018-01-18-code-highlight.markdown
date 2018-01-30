@@ -153,3 +153,54 @@ chmod +x ./test.sh  #使脚本具有执行权限
 ./test.sh  #执行脚本  
 /bin/sh test.sh
 ```
+
+
+## diff
+
+``` diff
+  webpack-demo
+  |- package.json
+  |- webpack.config.js
+  |- /dist
+    |- bundle.js
+    |- index.html
+  |- /src
+-   |- style.css
++   |- style.scss
+    |- index.js
+  |- /node_modules
+```
+
+``` diff
+-   <title>Getting Started</title>
++   <title>Asset Management</title>
+```
+
+``` diff
+  const path = require('path');
+
+  module.exports = {
+    entry: './src/index.js',
+    output: {
+      filename: 'bundle.js',
+      path: path.resolve(__dirname, 'dist')
+    },
++   module: {
++     rules: [
++       {
++         test: /\.css$/,
++         use: [
++           'style-loader',
++           'css-loader'
++         ]
++       }
++     ]
++   }
+  };
+```
+
+``` diff
+    let str:string = 'str';
+-   const tml = str + 'ing';
++   const tml = `${str}ing`;
+```

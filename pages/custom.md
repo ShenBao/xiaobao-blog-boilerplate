@@ -6,10 +6,11 @@ is-show-edit: false
 
 > 这里获取的是_data文件夹里的custom.json文件，需要在custom.json配置
 
+{% assign data = site.data.pages.custom %}
 <!-- 不想要标签可以注释掉以下代码片段 -->
 <div class="site-tags">
     <ul class="nav">
-        {% for item in site.data.custom  %}
+        {% for item in data %}
             <li>
                 <a href="#{{ item.title | replace:' ','-' }}" title="{{ item.title }}">
                 {{ item.title }}
@@ -27,7 +28,7 @@ is-show-edit: false
 </div>
 
 <div>
-    {% for group in site.data.custom  %}
+    {% for group in data %}
         <div class="site-page-list">
             <legend id="{{ group.title | replace:' ','-' }}">
                 <b>{{ group.title }}</b>

@@ -1,16 +1,16 @@
 <div class="site-contact-info">
     <div class="wrapper contact-info-content">
         <div>
-            <a class="about" href="{{ site.data.contactInfo.about.path | relative_url }}" title="{{ site.data.contactInfo.about.title }}">
-                {{ site.data.contactInfo.about.title }}
+            <a class="about" href="{{ site.data.config.contactInfo.about.path | relative_url }}" title="{{ site.data.config.contactInfo.about.title }}">
+                {{ site.data.config.contactInfo.about.title }}
             </a>
-            <a class="comment" href="{{ site.data.contactInfo.comments.path | relative_url }}" title="{{ site.data.contactInfo.comments.title }}">
-                {{ site.data.contactInfo.comments.title }}
+            <a class="comment" href="{{ site.data.config.contactInfo.comments.path | relative_url }}" title="{{ site.data.config.contactInfo.comments.title }}">
+                {{ site.data.config.contactInfo.comments.title }}
             </a>
         </div>
 
         <ul>
-            {% for group in site.data.contactInfo.group %}
+            {% for group in site.data.config.contactInfo.group %}
             <li>
                 <dl>
                     <dt>{{ group.title }}</dt> {% for item in group.list %}

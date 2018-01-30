@@ -22,7 +22,7 @@ Hey,I'm <strong>
 
 自命有理想的手艺人，理想现实主义设计师。秉承技术源自生活服务于生活的原则，喜欢尝试各种新玩意儿，强迫症重度患者（匠心精神），乐于分享！ 
 
-<!-- ## INTRODUCTION
+## INTRODUCTION
 
 - Name：[ShenBao](https://github.com/ShenBao)
 - City: BeiJing,China
@@ -47,7 +47,7 @@ Hey,I'm <strong>
 - Webpack / Gulp / FIS3 / rollup
 - Nodejs / Express / Koa
 - doT.js / Jade / Handlebarsjs
-- Git / SVN / Shell -->
+- Git / SVN / Shell
 
 ## QR CODE
 

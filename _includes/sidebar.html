@@ -51,7 +51,7 @@
             LINK
         </h5>
         <div>
-            {% for item in site.data.sidebarLink %}
+            {% for item in site.data.config.sidebarLink %}
             <a href="{{ item.path }}" target="_blank" title="{{ item.title }}">{{ item.title }}</a>
             {% endfor %}
         </div>

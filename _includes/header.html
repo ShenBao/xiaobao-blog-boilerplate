@@ -33,7 +33,7 @@
             {% endif %}
           {% endfor %} -->
 
-          {% for item in site.data.nav %}
+          {% for item in site.data.config.nav %}
             <a class="page-link"
               href="{{ item.path | relative_url }}"
               title="{{ item.title | escape }}"

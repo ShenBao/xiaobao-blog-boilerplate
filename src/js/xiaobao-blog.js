@@ -1,6 +1,7 @@
 import $ from "./jquery";
 import emojify from "./emojify.js";
 
+// import hljs from "highlight";
 import hljs from "./highlight";
 // var hljs = require('./highlight.pack');
 import logionList from "../data/logionList";

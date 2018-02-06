@@ -157,7 +157,7 @@ chmod +x ./test.sh  #使脚本具有执行权限
 
 ## diff
 
-``` diff
+```diff
   webpack-demo
   |- package.json
   |- webpack.config.js
@@ -171,12 +171,12 @@ chmod +x ./test.sh  #使脚本具有执行权限
   |- /node_modules
 ```
 
-``` diff
+```diff
 -   <title>Getting Started</title>
 +   <title>Asset Management</title>
 ```
 
-``` diff
+```diff
   const path = require('path');
 
   module.exports = {
@@ -199,7 +199,7 @@ chmod +x ./test.sh  #使脚本具有执行权限
   };
 ```
 
-``` diff
+```diff
     let str:string = 'str';
 -   const tml = str + 'ing';
 +   const tml = `${str}ing`;

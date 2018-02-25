@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  "使用highlight.js高亮你的代码"
+title:  "使用highlight.js或prism.js高亮你的代码"
 date:   2018-01-18 13:20:20 +0800
 categories: 
 tags:
     - Jekyll
     - highlight
+    - prism.js
     - code
 ---
 
@@ -158,7 +159,7 @@ chmod +x ./test.sh  #使脚本具有执行权限
 ## diff
 
 ```diff
-  webpack-demo
+##webpack-demo
   |- package.json
   |- webpack.config.js
   |- /dist
@@ -172,8 +173,8 @@ chmod +x ./test.sh  #使脚本具有执行权限
 ```
 
 ```diff
--   <title>Getting Started</title>
-+   <title>Asset Management</title>
+- <title>Getting Started</title>
++ <title>Asset Management</title>
 ```
 
 ```diff
@@ -200,7 +201,252 @@ chmod +x ./test.sh  #使脚本具有执行权限
 ```
 
 ```diff
-    let str:string = 'str';
--   const tml = str + 'ing';
-+   const tml = `${str}ing`;
+  let str:string = 'str';
+- const tml = str + 'ing';
++ const tml = `${str}ing`;
+```
+
+## 百行代码测试
+```js
+var str = 'string';
+var num = 88;
+var bool = true;
+var fn = function(){
+    console.log(str);
+}
+function hFn(){
+    alert('test');
+}
+
+var str = 'string';
+var num = 88;
+var bool = true;
+var fn = function(){
+    console.log(str);
+}
+function hFn(){
+    alert('test');
+}
+
+var str = 'string';
+var num = 88;
+var bool = true;
+var fn = function(){
+    console.log(str);
+}
+function hFn(){
+    alert('test');
+}
+
+var str = 'string';
+var num = 88;
+var bool = true;
+var fn = function(){
+    console.log(str);
+}
+function hFn(){
+    alert('test');
+}
+
+var str = 'string';
+var num = 88;
+var bool = true;
+var fn = function(){
+    console.log(str);
+}
+function hFn(){
+    alert('test');
+}
+
+var str = 'string';
+var num = 88;
+var bool = true;
+var fn = function(){
+    console.log(str);
+}
+function hFn(){
+    alert('test');
+}
+
+var str = 'string';
+var num = 88;
+var bool = true;
+var fn = function(){
+    console.log(str);
+}
+function hFn(){
+    alert('test');
+}
+
+var str = 'string';
+var num = 88;
+var bool = true;
+var fn = function(){
+    console.log(str);
+}
+function hFn(){
+    alert('test');
+}
+
+var str = 'string';
+var num = 88;
+var bool = true;
+var fn = function(){
+    console.log(str);
+}
+function hFn(){
+    alert('test');
+}
+
+
+var str = 'string';
+var num = 88;
+var bool = true;
+var fn = function(){
+    console.log(str);
+}
+function hFn(){
+    alert('test');
+}
+
+var str = 'string';
+var num = 88;
+var bool = true;
+var fn = function(){
+    console.log(str);
+}
+function hFn(){
+    alert('test');
+}
+
+var str = 'string';
+var num = 88;
+var bool = true;
+var fn = function(){
+    console.log(str);
+}
+function hFn(){
+    alert('test');
+}
+
+var str = 'string';
+var num = 88;
+var bool = true;
+var fn = function(){
+    console.log(str);
+}
+function hFn(){
+    alert('test');
+}
+
+var str = 'string';
+var num = 88;
+var bool = true;
+var fn = function(){
+    console.log(str);
+}
+function hFn(){
+    alert('test');
+}
+
+
+var str = 'string';
+var num = 88;
+var bool = true;
+var fn = function(){
+    console.log(str);
+}
+function hFn(){
+    alert('test');
+}
+
+var str = 'string';
+var num = 88;
+var bool = true;
+var fn = function(){
+    console.log(str);
+}
+function hFn(){
+    alert('test');
+}
+
+var str = 'string';
+var num = 88;
+var bool = true;
+var fn = function(){
+    console.log(str);
+}
+function hFn(){
+    alert('test');
+}
+
+var str = 'string';
+var num = 88;
+var bool = true;
+var fn = function(){
+    console.log(str);
+}
+function hFn(){
+    alert('test');
+}
+
+var str = 'string';
+var num = 88;
+var bool = true;
+var fn = function(){
+    console.log(str);
+}
+function hFn(){
+    alert('test');
+}
+
+var str = 'string';
+var num = 88;
+var bool = true;
+var fn = function(){
+    console.log(str);
+}
+function hFn(){
+    alert('test');
+}
+
+var str = 'string';
+var num = 88;
+var bool = true;
+var fn = function(){
+    console.log(str);
+}
+function hFn(){
+    alert('test');
+}
+
+var str = 'string';
+var num = 88;
+var bool = true;
+var fn = function(){
+    console.log(str);
+}
+function hFn(){
+    alert('test');
+}
+
+var str = 'string';
+var num = 88;
+var bool = true;
+var fn = function(){
+    console.log(str);
+}
+function hFn(){
+    alert('test');
+}
+
+var str = 'string';
+var num = 88;
+var bool = true;
+var fn = function(){
+    console.log(str);
+}
+function hFn(){
+    alert('test');
+}
 ```

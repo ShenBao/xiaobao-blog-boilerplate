@@ -12,6 +12,7 @@
         "start": "jekyll serve --port 8888",
         "prod": "JEKYLL_ENV=production jekyll serve",
         "dev": "jekyll serve --port 8888 --host 192.168.1.6",
+        "dev88": "jekyll serve --port 8888 --host 192.168.1.88",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "",
@@ -21,9 +22,11 @@
         "normalize.css": "^7.0.0"
     },
     "devDependencies": {
+        "copy-webpack-plugin": "^4.4.2",
         "css-loader": "^0.28.9",
         "extract-text-webpack-plugin": "^3.0.2",
         "file-loader": "^1.1.6",
+        "jquery": "^3.3.1",
         "json-loader": "^0.5.7",
         "node-sass": "^4.7.2",
         "sass-loader": "^6.0.6",

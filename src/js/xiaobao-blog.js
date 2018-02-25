@@ -1,9 +1,6 @@
-import $ from "./jquery";
+import $ from "jquery";
 import emojify from "./emojify.js";
 
-// import hljs from "highlight";
-import hljs from "./highlight";
-// var hljs = require('./highlight.pack');
 import logionList from "../data/logionList";
 import globalConfig from "../config";
 
@@ -29,7 +26,7 @@ import globalConfig from "../config";
             this.progress();
             this.emojify();
             this.clickHearts();
-            this.Highlight();
+            this.lineNumbers();
 
         },
 
@@ -174,10 +171,8 @@ import globalConfig from "../config";
             }
         },
 
-        Highlight: function () {
-            // init
-            hljs.initHighlightingOnLoad();
-            // 添加行号
+        // 添加行号
+        lineNumbers: function () {
             $('pre code').each(function () {
                 var lines = $(this)
                     .text()

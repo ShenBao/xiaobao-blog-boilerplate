@@ -3,7 +3,6 @@
  */
 import "./css/app";
 import "./iconfont/iconfont.css";
-import "./highlight/github-gist";
 
 /**
  * js

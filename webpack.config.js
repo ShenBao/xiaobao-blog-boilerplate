@@ -3,6 +3,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const ModuleConcatenationPlugin = require('webpack/lib/optimize/ModuleConcatenationPlugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const extractSass = new ExtractTextPlugin(
     {
@@ -11,7 +12,7 @@ const extractSass = new ExtractTextPlugin(
 );
 
 module.exports = {
-    entry: './src/shenbao-blog-app.js',
+    entry: ['./src/shenbao-blog-app.js'],
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'shenbao-blog-app.js'
@@ -108,6 +109,9 @@ module.exports = {
                 ie8: true,
             }
         }),
+        new CopyWebpackPlugin([
+            { from: './src/prism/prism.js', to: './' }
+        ])
         // new BundleAnalyzerPlugin(),
     ]
 };

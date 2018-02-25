@@ -22,7 +22,7 @@
                     cursor: pointer;
                     text-decoration: none;
                     &:hover {
-                        color: #0085a1;
+                        color: $main-color;
                     }
                 }
             }
@@ -44,8 +44,8 @@
                     margin: 0 1px;
                     margin-bottom: 6px;
                     &:hover {
-                        border-color: $brand-color;
-                        color: $brand-color;
+                        border-color: $main-color;
+                        color: $main-color;
                     }
                 }
             }
@@ -80,7 +80,7 @@
                         justify-content: center;
                         text-decoration: none;
                         &:hover i {
-                            color: #0085a1 !important;
+                            color: $main-color !important;
                         }
                         .icon-zhihu0 {
                             font-size: 32px !important;
@@ -103,7 +103,7 @@
                     font-size: 14px;
                     color: #bfbfbf;
                     &:hover {
-                        color: $brand-color;
+                        color: $main-color;
                     }
                 }
             }

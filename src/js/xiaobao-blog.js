@@ -59,7 +59,7 @@ import globalConfig from "../config";
 
         progress: function () {
             var $window = $(window);
-            var $progress = $('.progress-indicator');
+            var $progress = $('#progress-indicator');
             $window.on('scroll', function () {
                 var wh = $window.height();
                 var h = $('body').height();
@@ -71,8 +71,24 @@ import globalConfig from "../config";
             });
 
             function updateProgress(perc) {
+                var percInt = parseInt(perc * 100);
+                console.log(bgColor);
+                var bgColor = 'red';
+                if(percInt > 20) {
+                    bgColor = '#ffa500';
+                }
+                if(percInt > 40){
+                    bgColor = '#11f7d7';                    
+                }
+                if(percInt > 60){
+                    bgColor = '#008000';                    
+                }
+                if(percInt > 80){
+                    bgColor = '#4471ac';                    
+                }
                 $progress.css({
-                    width: perc * 100 + '%'
+                    width: perc * 100 + '%',
+                    backgroundColor: bgColor
                 });
             }
         },

@@ -1,5 +1,5 @@
 /* PrismJS 1.11.0
-http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript+abap+actionscript+ada+apacheconf+apl+applescript+c+asciidoc+asm6502+aspnet+autohotkey+autoit+bash+basic+batch+bison+brainfuck+bro+cpp+csharp+arduino+coffeescript+ruby+csp+css-extras+d+dart+diff+django+docker+eiffel+elixir+elm+erlang+fsharp+flow+fortran+gherkin+git+glsl+go+graphql+groovy+haml+handlebars+haskell+haxe+http+hpkp+hsts+ichigojam+icon+inform7+ini+io+j+java+jolie+json+julia+keyman+kotlin+latex+less+livescript+lolcode+lua+makefile+markdown+matlab+mel+mizar+monkey+n4js+nasm+nginx+nim+nix+nsis+objectivec+ocaml+opencl+oz+parigp+parser+pascal+perl+php+php-extras+powershell+processing+prolog+properties+protobuf+pug+puppet+pure+python+q+qore+r+jsx+typescript+renpy+reason+rest+rip+roboconf+crystal+rust+sas+sass+scss+scala+scheme+smalltalk+smarty+sql+stylus+swift+tcl+textile+twig+tsx+vbnet+verilog+vhdl+vim+wiki+xeora+xojo+yaml&plugins=autolinker+wpd+custom-class+toolbar+jsonp-highlight+highlight-keywords+previewers+autoloader+command-line+copy-to-clipboard */
+http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript+abap+actionscript+ada+apacheconf+apl+applescript+c+asciidoc+asm6502+aspnet+autohotkey+autoit+bash+basic+batch+bison+brainfuck+bro+cpp+csharp+arduino+coffeescript+ruby+csp+css-extras+d+dart+diff+django+docker+eiffel+elixir+elm+erlang+fsharp+flow+fortran+gherkin+git+glsl+go+graphql+groovy+haml+handlebars+haskell+haxe+http+hpkp+hsts+ichigojam+icon+inform7+ini+io+j+java+jolie+json+julia+keyman+kotlin+latex+less+livescript+lolcode+lua+makefile+markdown+matlab+mel+mizar+monkey+n4js+nasm+nginx+nim+nix+nsis+objectivec+ocaml+opencl+oz+parigp+parser+pascal+perl+php+php-extras+powershell+processing+prolog+properties+protobuf+pug+puppet+pure+python+q+qore+r+jsx+typescript+renpy+reason+rest+rip+roboconf+crystal+rust+sas+sass+scss+scala+scheme+smalltalk+smarty+sql+stylus+swift+tcl+textile+twig+tsx+vbnet+verilog+vhdl+vim+wiki+xeora+xojo+yaml&plugins=autolinker+custom-class+file-highlight+toolbar+jsonp-highlight+highlight-keywords+previewers+unescaped-markup+command-line+copy-to-clipboard */
 /**
  * prism.js default theme for JavaScript, CSS and HTML
  * Based on dabblet (http://dabblet.com)
@@ -140,17 +140,6 @@ pre[class*="language-"] {
 
 .token a {
 	color: inherit;
-}
-code[class*="language-"] a[href],
-pre[class*="language-"] a[href] {
-	cursor: help;
-	text-decoration: none;
-}
-
-code[class*="language-"] a[href]:hover,
-pre[class*="language-"] a[href]:hover {
-	cursor: help;
-	text-decoration: underline;
 }
 div.code-toolbar {
 	position: relative;
@@ -453,6 +442,17 @@ div.code-toolbar > .toolbar span:focus {
 	-o-animation: prism-previewer-time linear infinite 3s;
 	animation: prism-previewer-time linear infinite 3s;
 }
+/* Fallback, in case JS does not run, to ensure the code is at least visible */
+[class*='lang-'] script[type='text/plain'],
+[class*='language-'] script[type='text/plain'],
+script[type='text/plain'][class*='lang-'],
+script[type='text/plain'][class*='language-'] {
+	display: block;
+	font: 100% Consolas, Monaco, monospace;
+	white-space: pre;
+	overflow: auto;
+}
+
 .command-line-prompt {
 	border-right: 1px solid #999;
 	display: block;

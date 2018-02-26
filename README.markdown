@@ -25,7 +25,7 @@
 - 集成highlight.js代码高亮(请转至[highlight.js-branch](https://github.com/ShenBao/xiaobao-blog/tree/highlight.js-branch)分支)
 - 集成Prism.js代码高亮([master](https://github.com/ShenBao/xiaobao-blog/tree/master)分支)
 - code区域显示行号
-- 显示语言类型
+<!-- - 显示语言类型 -->
 - 支持copy code
 - 支持Emoji表情(ps:由于原版里对table支持不好，所以改了源码😭)
 - 添加顶部阅读进度条

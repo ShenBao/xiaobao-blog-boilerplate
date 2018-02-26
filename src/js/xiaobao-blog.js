@@ -72,7 +72,6 @@ import globalConfig from "../config";
 
             function updateProgress(perc) {
                 var percInt = parseInt(perc * 100);
-                console.log(bgColor);
                 var bgColor = 'red';
                 if(percInt > 20) {
                     bgColor = '#ffa500';

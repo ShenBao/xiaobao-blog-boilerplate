@@ -4,8 +4,8 @@
 
 var globalConfig = {
   domain: 'https://shenbao.github.io',
-  baseUrl: '/xiaobao-blog',
-  emojiImg: '/xiaobao-blog/img/emoji',
+  baseUrl: '/xiaobao-blog-boilerplate',
+  emojiImg: '/xiaobao-blog-boilerplate/img/emoji',
 
 };
 

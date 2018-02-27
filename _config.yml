@@ -12,7 +12,7 @@ icon: "/img/config/author-100.png"
 
 
 site_url: https://shenbao.github.io
-baseurl: "/xiaobao-blog"   # the subpath of your site, e.g. /blog
+baseurl: "/xiaobao-blog-boilerplate"   # the subpath of your site, e.g. /blog
 url: ""                           # site, e.g. http://example.com
 site_author:  ShenBao
 email: >-           # Site author email

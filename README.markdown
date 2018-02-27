@@ -1,8 +1,8 @@
 # xiaobao-blog-boilerplate
 
 
-- <a href="https://shenbao.github.io/xiaobao-blog/home" target="_blank">预览</a>
-- <a href="https://shenbao.github.io/xiaobao-blog/comments" target="_blank">反馈评论</a>
+- <a href="https://shenbao.github.io/xiaobao-blog-boilerplate/home" target="_blank">预览</a>
+- <a href="https://shenbao.github.io/xiaobao-blog-boilerplate/comments" target="_blank">反馈评论</a>
 
 扫一扫二维码查看效果:
 

@@ -53,7 +53,7 @@ layout: default
             </a> on {{ page.date | date: "%B %-d, %Y" }}
         </p>
 
-        <ul class="pager">
+        <ul class="pager" id="site-pager">
             <li class="previous">
                 {% if page.previous.url %}
                     <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
@@ -90,3 +90,10 @@ layout: default
 {% endif %}
 
 {% include site-page-bottom.html %}
+
+{% if page.catalogFile  %}
+<script>
+    window.ShenBaoBlogCatalogFileName = "{{ page.catalogFile }}";
+    window.PagePath = "/{{ page.path }}";
+</script>
+{% endif %}

@@ -3,6 +3,7 @@ import emojify from "./emojify.js";
 
 import logionList from "../data/logionList";
 import globalConfig from "../config";
+import ShenBaoBlogCatalogFileNameObj from "../../_data/pages/index.js"
 
 (function (global, $) {
 
@@ -20,14 +21,13 @@ import globalConfig from "../config";
         constructor: ShenBaoBlogApplication,
 
         initialization: function () {
-
             this.todayLogion();
             this.backTop();
             this.progress();
             this.emojify();
             this.clickHearts();
             this.lineNumbers();
-
+            this.pager();
         },
 
         todayLogion: function () {
@@ -202,6 +202,48 @@ import globalConfig from "../config";
                     $numbering.append($('<li/>').text(i));
                 }
             });
+        },
+        pager: function() {
+
+            if(!window.ShenBaoBlogCatalogFileName || !window.PagePath) {
+                return;
+            }
+            const catalog = ShenBaoBlogCatalogFileNameObj[window.ShenBaoBlogCatalogFileName];
+            
+            const catalogList = [];
+            for (let i = 0; i < catalog.length; i++) {
+                for (let j = 0; j < catalog[i].list.length; j++) {
+                    let basePath = catalog[i].list[j].basePath;
+                    for (let m = 0; m < catalog[i].list[j].list.length; m++) {
+                        const item = {
+                            path: basePath + catalog[i].list[j].list[m].path,
+                            title: catalog[i].list[j].list[m].title
+                        };
+                        catalogList.push(item);
+                    }
+                }
+            }
+            // 当前文章下标
+            var PagePathIndex = catalogList.findIndex(function(item){
+                return window.PagePath.startsWith(item.path);
+            });
+
+            // 上一篇
+            if(PagePathIndex > 0){
+                let previous = `<a href="${ globalConfig.baseUrl }${ catalogList[PagePathIndex-1].path }.html" data-toggle="tooltip" data-placement="top" title="${ catalogList[PagePathIndex-1].title }">
+                                Previous<br>
+                                <span>${ catalogList[PagePathIndex-1].title }</span>
+                            </a>`;
+                $('#site-pager .previous').html(previous);
+            }
+            // 下一篇
+            if(PagePathIndex !== catalogList.length - 1){
+                let next = `<a href="${ globalConfig.baseUrl }${ catalogList[PagePathIndex+1].path }.html" data-toggle="tooltip" data-placement="top" title="${ catalogList[PagePathIndex+1].title }">
+                        Next<br>
+                        <span>${ catalogList[PagePathIndex+1].title }</span>
+                    </a>`;
+                $('#site-pager .next').html(next);
+            }
         }
     };
 

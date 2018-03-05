@@ -225,8 +225,16 @@ import ShenBaoBlogCatalogFileNameObj from "../../_data/pages/index.js"
             }
             // 当前文章下标
             var PagePathIndex = catalogList.findIndex(function(item){
-                return window.PagePath.startsWith(item.path);
+                var pagePath = window.PagePath.toLowerCase();
+                var itemPath = item.path.toLowerCase();
+                return pagePath.startsWith(itemPath);
             });
+
+            // console.log('--------------------------');
+            // console.log('下标：'+PagePathIndex);
+            // console.log('path:'+catalogList[PagePathIndex].path);
+            // console.log('title:'+catalogList[PagePathIndex].title);
+            // console.log('--------------------------');
 
             // 上一篇
             if(PagePathIndex > 0){

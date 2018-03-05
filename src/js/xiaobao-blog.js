@@ -238,7 +238,7 @@ import ShenBaoBlogCatalogFileNameObj from "../../_data/pages/index.js"
 
             // 上一篇
             if(PagePathIndex > 0){
-                let previous = `<a href="${ globalConfig.baseUrl }${ catalogList[PagePathIndex-1].path }.html" data-toggle="tooltip" data-placement="top" title="${ catalogList[PagePathIndex-1].title }">
+                let previous = `<a href="${ globalConfig.baseUrl }${ catalogList[PagePathIndex-1].path }" data-toggle="tooltip" data-placement="top" title="${ catalogList[PagePathIndex-1].title }">
                                 Previous<br>
                                 <span>${ catalogList[PagePathIndex-1].title }</span>
                             </a>`;
@@ -246,7 +246,7 @@ import ShenBaoBlogCatalogFileNameObj from "../../_data/pages/index.js"
             }
             // 下一篇
             if(PagePathIndex !== catalogList.length - 1){
-                let next = `<a href="${ globalConfig.baseUrl }${ catalogList[PagePathIndex+1].path }.html" data-toggle="tooltip" data-placement="top" title="${ catalogList[PagePathIndex+1].title }">
+                let next = `<a href="${ globalConfig.baseUrl }${ catalogList[PagePathIndex+1].path }" data-toggle="tooltip" data-placement="top" title="${ catalogList[PagePathIndex+1].title }">
                         Next<br>
                         <span>${ catalogList[PagePathIndex+1].title }</span>
                     </a>`;

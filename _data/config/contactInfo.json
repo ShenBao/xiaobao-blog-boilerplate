@@ -42,7 +42,7 @@
                     "title": "ShenBao Blog"
                 },
                 {
-                    "path": "https://shenbao.github.io/shenbao-learn-notes",
+                    "path": "https://shenbao.github.io/shenbao-learn-notes/comment/",
                     "title": "ShenBao Notes"
                 }
             ]
@@ -51,7 +51,7 @@
             "title": "其他",
             "list": [
                 {
-                    "path": "https://shenbao.github.io/xiaobao-blog",
+                    "path": "https://shenbao.github.io/xiaobao-blog-boilerplate",
                     "title": "Blog Boilerplate"
                 },
                 {

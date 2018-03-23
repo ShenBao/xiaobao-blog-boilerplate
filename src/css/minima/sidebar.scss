@@ -85,6 +85,14 @@
                         .icon-zhihu0 {
                             font-size: 32px !important;
                         }
+                        .icon-nodejs:before {
+                            color: #FFFFFF;
+                            background-color: #bfbfbf;
+                            border-radius: 50%;
+                        }
+                        .icon-nodejs:hover:before {
+                            background-color: $mian-hover-color;
+                        }
                         i {
                             color: #bfbfbf;
                             font-size: 28px !important;

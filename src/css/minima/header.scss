@@ -7,6 +7,7 @@
 }
 
 .site-header {
+    position: relative;
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: $spacing-unit * 1.865;
@@ -103,6 +104,17 @@
                     margin-right: 0;
                 }
             }
+        }
+    }
+    .fork-me-on-github {
+        position: absolute;
+        z-index: 8888;
+        right: 0;
+        top: 0;
+    }
+    @include media-query(1220px) {
+        .fork-me-on-github {
+            display: none;
         }
     }
 }

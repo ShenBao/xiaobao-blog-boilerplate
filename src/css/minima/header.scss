@@ -109,8 +109,13 @@
     .fork-me-on-github {
         position: absolute;
         z-index: 8888;
-        right: 0;
         top: 0;
+        right: -3px;
+        width: 140px;
+        height: 140px;
+        img {
+            width: 100%;
+        }
     }
     @include media-query(1220px) {
         .fork-me-on-github {

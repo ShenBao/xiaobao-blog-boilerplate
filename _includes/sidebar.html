@@ -3,7 +3,7 @@
     <section class="tags">
         <hr>
         <h5>
-            <a href="{{'/tags/' | prepend: site.baseurl }}" title="tags">FEATURED TAGS</a>
+            <a href="{{'/tags' | prepend: site.baseurl }}" title="tags">FEATURED TAGS</a>
         </h5>
         <div>
             {% for tag in site.tags %}
@@ -15,7 +15,7 @@
     <section class="about">
         <hr>
         <h5>
-            <a href="{{'/about/' | prepend: site.baseurl }}" title="about">ABOUT ME</a>
+            <a href="{{'/about' | prepend: site.baseurl }}" title="about">ABOUT ME</a>
         </h5>
         <img src="{{ site.sidebar-about-icon || prepend: site.baseurl}}">
         <p>

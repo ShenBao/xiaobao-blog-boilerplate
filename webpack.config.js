@@ -18,6 +18,7 @@ module.exports = {
         filename: 'shenbao-blog-app.js'
     },
 
+    // devtool: "cheap-module-eval-source-map",
     devtool: "hidden-source-map",
     resolve: {
         extensions: [

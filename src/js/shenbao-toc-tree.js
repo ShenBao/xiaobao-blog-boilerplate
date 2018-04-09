@@ -54,7 +54,8 @@ $(function () {
             }
             var $tocTreeHTML = '';
             for (let j = 0; j < $tocTreeArray.length; j++) {
-                var $item = '<li class="shenbao-toc-tree-li ' + $tocTreeArray[j].tagName + '-nav">' + $tocTreeArray[j].title + '</li>';
+                var $item = '<li class="shenbao-toc-tree-li ' + $tocTreeArray[j].tagName + '-nav"' +
+                    'title="'+ $tocTreeArray[j].title +'">' + $tocTreeArray[j].title + '</li>';
                 $tocTreeHTML += $item;
             }
             $('.shenbao-toc-tree-body').html($tocTreeHTML);

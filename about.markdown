@@ -35,7 +35,7 @@ Hey,I'm <strong>
 - API DOC: [API DOC](https://shenbao.github.io/blog)
 
 
-## TECHNOLOGY
+<!-- ## TECHNOLOGY
 
 - HTML / HTML5
 - CSS / CSS3
@@ -47,7 +47,7 @@ Hey,I'm <strong>
 - Webpack / Gulp / FIS3 / rollup
 - Nodejs / Express / Koa
 - doT.js / Jade / Handlebarsjs
-- Git / SVN / Shell
+- Git / SVN / Shell -->
 
 ## QR CODE
 

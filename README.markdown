@@ -19,7 +19,7 @@
 - 支持自定义列表
 - 支持About Me
 - 注册disqus，添加disqus评论（需要科学上网）
-- 注册并添加了hypercomments评论，支持匿名评论,支持国内访问
+- 注册并添加了hypercomments评论，支持匿名评论,支持国内访问（免费用户即将不能正常使用）
 
 - 支持markdown文件
 - 集成highlight.js代码高亮(请转至[highlight.js-branch](https://github.com/ShenBao/xiaobao-blog/tree/highlight.js-branch)分支)
